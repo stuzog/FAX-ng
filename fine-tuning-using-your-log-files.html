@@ -21,10 +21,10 @@
   <meta name="twitter:description" content="Settings and Steps for installing, setting up, and running FreeAPS X, in order of listing in the app. If not mentioned, leave existing Default Settings" />
   
 
-<meta name="author" content="Compiled by Stuart Hertzog" />
+<meta name="author" content="Compiled by Stuart Hertzog and Marc Fornier" />
 
 
-<meta name="date" content="2022-06-26" />
+<meta name="date" content="2022-06-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="add-pump.html"/>
-<link rel="next" href="adjustmentfactor.html"/>
+<link rel="next" href="adjustmentfactor-autosens.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -66,7 +66,17 @@
 <li><a href="./">FreeAPS-X-ng User Guide</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> How To Use This Guide</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> How To Use This Guide</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#the-sidebar"><i class="fa fa-check"></i><b>1.1</b> The Sidebar</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#the-toolbar"><i class="fa fa-check"></i><b>1.2</b> The Toolbar</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#showhide"><i class="fa fa-check"></i><b>1.2.1</b> Show/Hide</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#search"><i class="fa fa-check"></i><b>1.2.2</b> Search</a></li>
+<li class="chapter" data-level="1.2.3" data-path="index.html"><a href="index.html#theme-settings"><i class="fa fa-check"></i><b>1.2.3</b> Theme settings</a></li>
+<li class="chapter" data-level="1.2.4" data-path="index.html"><a href="index.html#downloads"><i class="fa fa-check"></i><b>1.2.4</b> Downloads</a></li>
+<li class="chapter" data-level="1.2.5" data-path="index.html"><a href="index.html#sharing"><i class="fa fa-check"></i><b>1.2.5</b> Sharing</a></li>
+<li class="chapter" data-level="1.2.6" data-path="index.html"><a href="index.html#information"><i class="fa fa-check"></i><b>1.2.6</b> Information</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="initial-settings.html"><a href="initial-settings.html"><i class="fa fa-check"></i><b>2</b> Initial Settings</a><ul>
 <li class="chapter" data-level="2.1" data-path="initial-settings.html"><a href="initial-settings.html#services"><i class="fa fa-check"></i><b>2.1</b> SERVICES</a><ul>
 <li class="chapter" data-level="2.1.1" data-path="initial-settings.html"><a href="initial-settings.html#nightscout"><i class="fa fa-check"></i><b>2.1.1</b> Nightscout</a></li>
@@ -86,18 +96,20 @@
 <li class="chapter" data-level="3" data-path="add-pump.html"><a href="add-pump.html"><i class="fa fa-check"></i><b>3</b> Add Pump</a><ul>
 <li class="chapter" data-level="3.1" data-path="add-pump.html"><a href="add-pump.html#if-you-are-updgrading-from-freeaps-x"><i class="fa fa-check"></i><b>3.1</b> If You Are Updgrading From FreeAPS X</a></li>
 <li class="chapter" data-level="3.2" data-path="add-pump.html"><a href="add-pump.html#if-you-are-upgrading-from-loop-to-fax-ng"><i class="fa fa-check"></i><b>3.2</b> If You Are Upgrading From Loop to FAX-ng</a></li>
-<li class="chapter" data-level="3.3" data-path="add-pump.html"><a href="add-pump.html#closed-loop"><i class="fa fa-check"></i><b>3.3</b> Closed Loop</a></li>
+<li class="chapter" data-level="3.3" data-path="add-pump.html"><a href="add-pump.html#close-loop"><i class="fa fa-check"></i><b>3.3</b> Close Loop</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html"><i class="fa fa-check"></i><b>4</b> Fine-Tuning Using Your Log Files</a><ul>
 <li class="chapter" data-level="4.1" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#copying-your-log-files-to-your-mac"><i class="fa fa-check"></i><b>4.1</b> Copying Your Log Files to Your Mac</a></li>
 <li class="chapter" data-level="4.2" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#setting-uamsmbsmb-limitations"><i class="fa fa-check"></i><b>4.2</b> Setting UAMSMB/SMB Limitations</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#using-terminal-on-your-mac"><i class="fa fa-check"></i><b>4.2.1</b> Using Terminal on Your Mac</a></li>
-<li class="chapter" data-level="4.2.2" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#an-easier-way-for-the-rest-of-us"><i class="fa fa-check"></i><b>4.2.2</b> An Easier Way for the Rest of Us</a></li>
+<li class="chapter" data-level="4.2.1" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#safety-limiters"><i class="fa fa-check"></i><b>4.2.1</b> Safety Limiters</a></li>
+<li class="chapter" data-level="4.2.2" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#open-terminal-on-your-mac"><i class="fa fa-check"></i><b>4.2.2</b> Open Terminal on Your Mac</a></li>
+<li class="chapter" data-level="4.2.3" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#find-and-compare-the-ratio-of-smb-limited-lines"><i class="fa fa-check"></i><b>4.2.3</b> Find and Compare The Ratio of SMB-Limited Lines</a></li>
+<li class="chapter" data-level="4.2.4" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#an-easier-way-for-the-rest-of-us"><i class="fa fa-check"></i><b>4.2.4</b> An Easier Way for the Rest of Us</a></li>
+<li class="chapter" data-level="4.2.5" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#checking-the-results"><i class="fa fa-check"></i><b>4.2.5</b> Checking The Results</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#checking-the-results"><i class="fa fa-check"></i><b>4.3</b> Checking The Results</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="adjustmentfactor.html"><a href="adjustmentfactor.html"><i class="fa fa-check"></i><b>5</b> AdjustmentFactor</a><ul>
-<li class="chapter" data-level="5.1" data-path="adjustmentfactor.html"><a href="adjustmentfactor.html#ballpark-formula"><i class="fa fa-check"></i><b>5.1</b> Ballpark Formula</a></li>
+<li class="chapter" data-level="5" data-path="adjustmentfactor-autosens.html"><a href="adjustmentfactor-autosens.html"><i class="fa fa-check"></i><b>5</b> AdjustmentFactor (AutoSens)</a><ul>
+<li class="chapter" data-level="5.1" data-path="adjustmentfactor-autosens.html"><a href="adjustmentfactor-autosens.html#ballpark-formula"><i class="fa fa-check"></i><b>5.1</b> Ballpark Formula</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html"><i class="fa fa-check"></i><b>6</b> Bolusing for Meals</a><ul>
 <li class="chapter" data-level="6.1" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html#rule-of-thumb-meal-bolusing"><i class="fa fa-check"></i><b>6.1</b> Rule-of-Thumb Meal Bolusing</a></li>
@@ -136,6 +148,8 @@
 </div>
 <div id="setting-uamsmbsmb-limitations" class="section level2">
 <h2><span class="header-section-number">4.2</span> Setting UAMSMB/SMB Limitations</h2>
+<div id="safety-limiters" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Safety Limiters</h3>
 <p>The following <em>Settings</em> act as “safety limiters”:</p>
 <pre><code>Max UAMSMB Basal Minutes
 Max SMB Basal Minutes
@@ -148,13 +162,36 @@ Autosens Min</code></pre>
 <pre><code>SMB is not limited by maxUAMSMBBasalMinutes
 SMB is not limited by maxSMBBasalMinutes
 Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
-<div id="using-terminal-on-your-mac" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> Using Terminal on Your Mac</h3>
+<p>To understand SMB and its limitations factors, you can read:<br />
+<a href="https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html#understanding-super-micro-bolus-smb">Understanding Super Micro Bolus (SMB)</a> in the <a href="https://openaps.readthedocs.io/en/latest/docs/README.html">OpenAPS documentation</a>.</p>
+</div>
+<div id="open-terminal-on-your-mac" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Open Terminal on Your Mac</h3>
 <p>The <em>Terminal</em> application is in <em>Applications —&gt; Utilities —&gt; Terminal</em></p>
-<p><strong>SHORTCUT:</strong> Click on the <em>Desktop</em> in <em>Finder</em> then hold [SHIFT+OPTION+U] keys down together, press [RETURN] or [ENTER], then start typing <em>terminal</em> when the window opens. Double-click the now-selected <em>Terminal</em> application to open it.</p>
-<p>Type <code>cd [SPACE]</code> in Terminal, then switch to <em>Finder</em> and drag the small <em>Folder icon</em> where you saved the log files, into the <em>Terminal</em> window.</p>
-<p>Press [ENTER] or [RETURN]. This will change <em>Terminal</em> to the log file directory. You can type <code>ls</code> then <code>[RETURN]</code> or <code>[ENTER]</code> to list them.</p>
-<p>The commands given below will now work correctly.</p>
+<div id="shortcut-to-open-terminal" class="section level4">
+<h4><span class="header-section-number">4.2.2.1</span> <strong>SHORTCUT to open Terminal</strong></h4>
+<ul>
+<li>Click on the <em>Desktop</em> in <em>Finder</em></li>
+<li>Hold [SHIFT+OPTION+U] keys down together</li>
+<li>Press [RETURN] or [ENTER]</li>
+<li>Start typing <em>terminal</em> when the window opens</li>
+<li>Double-click the now-selected <em>Terminal</em> application to open it</li>
+</ul>
+</div>
+<div id="change-to-the-log-file-directory" class="section level4">
+<h4><span class="header-section-number">4.2.2.2</span> Change to the Log File Directory</h4>
+<ul>
+<li>Type <code>cd [SPACE]</code> in Terminal</li>
+<li>Switch to <em>Finder</em></li>
+<li>Drag the small <em>Folder icon</em> where you saved the log files, into the <em>Terminal</em> window</li>
+<li>Press [ENTER/RETURN]. This will change <em>Terminal</em> to the log file directory.</li>
+</ul>
+<p>You can type <code>ls</code> then <code>[RETURN]</code> or <code>[ENTER]</code> to list them.
+The commands given below will now work correctly.</p>
+</div>
+</div>
+<div id="find-and-compare-the-ratio-of-smb-limited-lines" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Find and Compare The Ratio of SMB-Limited Lines</h3>
 <p>First, find find the total number of lines from the log pertinent to each.</p>
 <p>Copy and paste the first line of each command (below), after the <code>$</code> prompt. The first line is the command, the second the returned result:</p>
 <pre><code>grep maxUAMSMBBasalMinutes log.txt | grep limited | wc -l
@@ -165,25 +202,38 @@ Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
 <p>Compare the two results. If the number of limited lines is more than 5% (in the above examples it obviously is), you need to adjust <code>maxUAMSMBBasalMinutes</code>, guided by these log reports.</p>
 <p>Sort the result by calculated units (the last value on the line):</p>
 <pre><code>grep maxUAMSMBBasalMinutes log.txt | grep &quot;SMB limited&quot;  | sort -n +20</code></pre>
-<p>For example, if the highest value is 2.26U and your <code>maxUAMSMBBasalMinutes</code> right now is .2U, and there are many lines with values more than 1U, you would need to raise SMBMax to 1U and ignore the ones &gt;1U.</p>
-<p>Changing this is your <em>Settings</em> will clear off most of the list.</p>
+<p>Scroll through the search results to see how much the algorithm is limiting insulin delivery. The overall idea is to “ignore” the extreme SMBs. If the latter accounts for less than 5% of all lines, then don’t change your settings.</p>
+<p>In the log file, you will see lines similar to:</p>
+<pre><code>DEV: JavaScript log: SMB is not limited by MaxUAMSMBBasalMinutes. ( insulinReq: 0.53U )
+DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.28U )</code></pre>
+<p>There will be entries for both <em>maxUAMSMBBasalMinutes</em> and <em>maxSMBBasalMinutes</em></p>
+<p>Optimally, you want to have more “not limited” lines then limited, with limited being limited to less then 5% of all of the lines.</p>
+<p>If you need to adjust <em>maxUAMSMBBasalMinutes</em> to reduce the percentage of lines that are limited, look for the line that represents about the mid-way of limited values. For example, if you have something like:</p>
+<pre><code>DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.28U )
+DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 5.72U )
+DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.1U )</code></pre>
+<p>Use the entry with 6.1U as your adjustment point, with the formula:</p>
+<pre><code>   60m * ( 6.1 / 1.5 ) = 240</code></pre>
+<p>And use the rounded results for your new value in <em>maxUAMSMBBasalMinutes</em>. Do the maths and up your UAMSMB basal minutes by that amount. For example: the algorithm bolused 1U insulin when it says it really wanted to bolus 3U, so increase <strong>UAMBasalMinutes</strong> by 3x in <em>Settings</em>.</p>
+<p>If you need to adjust, there are going to be more lines then the above to work with, but the value in parenthesis is what the system has calculated you require in the way of insulin, and the value outside is the limit BASED ON <code>BasalMinutes</code>. The 1.5U will vary depending on time of day, as its determined by your Basal Rate at the time of calculation.</p>
+<p>When you make the change, give it 24 hours before checking and adjusting again.</p>
 </div>
 <div id="an-easier-way-for-the-rest-of-us" class="section level3">
-<h3><span class="header-section-number">4.2.2</span> An Easier Way for the Rest of Us</h3>
+<h3><span class="header-section-number">4.2.4</span> An Easier Way for the Rest of Us</h3>
 <p>Here’s a much easier way for non-technical people:
 * Email log files to yourself
 * Open <code>log_prev.txt</code>
 * Press <code>[CONTROL/COMMAND] + F</code> to perform a search
 * Enter e.g. <em>SMB is limited by maxUAMSMBBasalMinutes</em> into the <em>Search field</em>.
 * Press [RETURN/ENTER]</p>
-<p>Scroll through the search results to see how much the algorithm is limiting insulin delivery. Do the maths and up your UAMSMB basal minutes by that amount. For example: the algorithm bolused 1U insulin when it says it really wanted to bolus 3U, so increase <strong>UAMBasalMinutes</strong> by 3x in <em>Settings</em>.</p>
+<p>Search for either “is limited” or “is not limited” to get the numbers for both. If the <code>[“limited”]/[“is not limited”] x 100</code> is less than 5 (5%), then don’t change anything.</p>
 </div>
-</div>
-<div id="checking-the-results" class="section level2">
-<h2><span class="header-section-number">4.3</span> Checking The Results</h2>
-<p>To check this (except the first day or so), run the above commands on the <code>log_prev.txt</code> file, which reports the previous 24h period. Leave it run for a full day before rechecking.</p>
+<div id="checking-the-results" class="section level3">
+<h3><span class="header-section-number">4.2.5</span> Checking The Results</h3>
+<p>To check this (except the first day or so), run the above commands on the <code>log_prev.txt</code> file, which reports the previous 24-hour period. Leave it run for a full day before rechecking.</p>
 <p>If everything else is set up correctly for you, these SMB maximums won’t be needed in the future. But now you can know for sure that they are based on the results returned in your log files.</p>
 
+</div>
 </div>
 </div>
             </section>
@@ -192,7 +242,7 @@ Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
         </div>
       </div>
 <a href="add-pump.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="adjustmentfactor.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="adjustmentfactor-autosens.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
