@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4 Fine-Tuning Using Your Log Files | FreeAPS-X-ng User Guide</title>
-  <meta name="description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes clinic in Vancouver, BC Canada" />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4 Fine-Tuning Using Your Log Files | FreeAPS-X-ng User Guide" />
   <meta property="og:type" content="book" />
   
-  
-  <meta property="og:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes clinic in Vancouver, BC Canada" />
+  <meta property="og:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
   <meta name="github-repo" content="stuzog/FAX-ng" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="4 Fine-Tuning Using Your Log Files | FreeAPS-X-ng User Guide" />
   
-  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes clinic in Vancouver, BC Canada" />
+  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
   
 
 <meta name="author" content="By Stuart Hertzog with assistance from Marc Fornier" />
 
 
-<meta name="date" content="2022-07-01" />
+<meta name="date" content="2022-07-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,19 +32,27 @@
   
 <link rel="prev" href="add-pump.html"/>
 <link rel="next" href="adjustmentfactor-autosens.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
 
 
 
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -138,18 +145,18 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="fine-tuning-using-your-log-files" class="section level1">
-<h1><span class="header-section-number">4</span> Fine-Tuning Using Your Log Files</h1>
-<div id="copying-your-log-files-to-your-mac" class="section level2">
-<h2><span class="header-section-number">4.1</span> Copying Your Log Files to Your Mac</h2>
+<div id="fine-tuning-using-your-log-files" class="section level1 hasAnchor">
+<h1><span class="header-section-number">4</span> Fine-Tuning Using Your Log Files<a href="fine-tuning-using-your-log-files.html#fine-tuning-using-your-log-files" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="copying-your-log-files-to-your-mac" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.1</span> Copying Your Log Files to Your Mac<a href="fine-tuning-using-your-log-files.html#copying-your-log-files-to-your-mac" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You must first create and copy <em>‌FreeAPS-ng</em> log files from your iPhone to your Mac computer.</p>
 <p>Tap <em>Share logs</em> at the very bottom of <em>Settings</em> in FAX-ng. This will create two log files, <code>log.txt</code> and <code>log_prev.txt</code>, and open a screen allowing you to Share them by a variety of methods.</p>
 <p>Save these files on your Mac in a <em>Folder</em> of your choice. Leave the <em>Folder window</em> open on your <em>Desktop</em>.</p>
 </div>
-<div id="setting-uamsmbsmb-limitations" class="section level2">
-<h2><span class="header-section-number">4.2</span> Setting UAMSMB/SMB Limitations</h2>
-<div id="safety-limiters" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> Safety Limiters</h3>
+<div id="setting-uamsmbsmb-limitations" class="section level2 hasAnchor">
+<h2><span class="header-section-number">4.2</span> Setting UAMSMB/SMB Limitations<a href="fine-tuning-using-your-log-files.html#setting-uamsmbsmb-limitations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="safety-limiters" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.2.1</span> Safety Limiters<a href="fine-tuning-using-your-log-files.html#safety-limiters" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The following <em>Settings</em> act as “safety limiters”:</p>
 <pre><code>Max UAMSMB Basal Minutes
 Max SMB Basal Minutes
@@ -165,11 +172,11 @@ Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
 <p>To understand SMB and its limitations factors, you can read:<br />
 <a href="https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html#understanding-super-micro-bolus-smb">Understanding Super Micro Bolus (SMB)</a> in the <a href="https://openaps.readthedocs.io/en/latest/docs/README.html">OpenAPS documentation</a>.</p>
 </div>
-<div id="open-terminal-on-your-mac" class="section level3">
-<h3><span class="header-section-number">4.2.2</span> Open Terminal on Your Mac</h3>
+<div id="open-terminal-on-your-mac" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.2.2</span> Open Terminal on Your Mac<a href="fine-tuning-using-your-log-files.html#open-terminal-on-your-mac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The <em>Terminal</em> application is in <em>Applications —&gt; Utilities —&gt; Terminal</em></p>
-<div id="shortcut-to-open-terminal" class="section level4">
-<h4><span class="header-section-number">4.2.2.1</span> <strong>SHORTCUT to open Terminal</strong></h4>
+<div id="shortcut-to-open-terminal" class="section level4 hasAnchor">
+<h4><span class="header-section-number">4.2.2.1</span> <strong>SHORTCUT to open Terminal</strong><a href="fine-tuning-using-your-log-files.html#shortcut-to-open-terminal" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>Click on the <em>Desktop</em> in <em>Finder</em></li>
 <li>Hold [SHIFT+OPTION+U] keys down together</li>
@@ -178,8 +185,8 @@ Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
 <li>Double-click the now-selected <em>Terminal</em> application to open it</li>
 </ul>
 </div>
-<div id="change-to-the-log-file-directory" class="section level4">
-<h4><span class="header-section-number">4.2.2.2</span> Change to the Log File Directory</h4>
+<div id="change-to-the-log-file-directory" class="section level4 hasAnchor">
+<h4><span class="header-section-number">4.2.2.2</span> Change to the Log File Directory<a href="fine-tuning-using-your-log-files.html#change-to-the-log-file-directory" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>Type <code>cd [SPACE]</code> in Terminal</li>
 <li>Switch to <em>Finder</em></li>
@@ -190,8 +197,8 @@ Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
 The commands given below will now work correctly.</p>
 </div>
 </div>
-<div id="find-and-compare-the-ratio-of-smb-limited-lines" class="section level3">
-<h3><span class="header-section-number">4.2.3</span> Find and Compare The Ratio of SMB-Limited Lines</h3>
+<div id="find-and-compare-the-ratio-of-smb-limited-lines" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.2.3</span> Find and Compare The Ratio of SMB-Limited Lines<a href="fine-tuning-using-your-log-files.html#find-and-compare-the-ratio-of-smb-limited-lines" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>First, find find the total number of lines from the log pertinent to each.</p>
 <p>Copy and paste the first line of each command (below), after the <code>$</code> prompt. The first line is the command, the second the returned result:</p>
 <pre><code>grep maxUAMSMBBasalMinutes log.txt | grep limited | wc -l
@@ -218,8 +225,8 @@ DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.1U )
 <p>If you need to adjust, there are going to be more lines then the above to work with, but the value in parenthesis is what the system has calculated you require in the way of insulin, and the value outside is the limit BASED ON <code>BasalMinutes</code>. The 1.5U will vary depending on time of day, as its determined by your Basal Rate at the time of calculation.</p>
 <p>When you make the change, give it 24 hours before checking and adjusting again.</p>
 </div>
-<div id="an-easier-way-for-the-rest-of-us" class="section level3">
-<h3><span class="header-section-number">4.2.4</span> An Easier Way for the Rest of Us</h3>
+<div id="an-easier-way-for-the-rest-of-us" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.2.4</span> An Easier Way for the Rest of Us<a href="fine-tuning-using-your-log-files.html#an-easier-way-for-the-rest-of-us" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Here’s a much easier way for non-technical people:
 * Email log files to yourself
 * Open <code>log_prev.txt</code>
@@ -228,8 +235,8 @@ DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.1U )
 * Press [RETURN/ENTER]</p>
 <p>Search for either “is limited” or “is not limited” to get the numbers for both. If the <code>[“limited”]/[“is not limited”] x 100</code> is less than 5 (5%), then don’t change anything.</p>
 </div>
-<div id="checking-the-results" class="section level3">
-<h3><span class="header-section-number">4.2.5</span> Checking The Results</h3>
+<div id="checking-the-results" class="section level3 hasAnchor">
+<h3><span class="header-section-number">4.2.5</span> Checking The Results<a href="fine-tuning-using-your-log-files.html#checking-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To check this (except the first day or so), run the above commands on the <code>log_prev.txt</code> file, which reports the previous 24-hour period. Leave it run for a full day before rechecking.</p>
 <p>If everything else is set up correctly for you, these SMB maximums won’t be needed in the future. But now you can know for sure that they are based on the results returned in your log files.</p>
 
@@ -246,12 +253,13 @@ DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.1U )
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -259,12 +267,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -272,14 +280,22 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/03_Fine-Tuning_Using_Your_Log_Files.Rmd",
+"link": "https://github.com/stuzog/FAX-ng/edit/main/03_Fine-Tuning_Using_Your_Log_Files.Rmd",
 "text": "Edit"
 },
 "history": {
 "link": null,
 "text": null
 },
-"download": ["_main.pdf", "_main.epub"],
+"view": {
+"link": "https://github.com/stuzog/FAX-ng/blob/master/03_Fine-Tuning_Using_Your_Log_Files.Rmd",
+"text": null
+},
+"download": ["FAX-ng User Guide.pdf", "FAX-ng User Guide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

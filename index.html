@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>FreeAPS-X-ng User Guide</title>
-  <meta name="description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes clinic in Vancouver, BC Canada" />
-  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+  <meta name="description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="FreeAPS-X-ng User Guide" />
   <meta property="og:type" content="book" />
   
-  
-  <meta property="og:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes clinic in Vancouver, BC Canada" />
+  <meta property="og:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
   <meta name="github-repo" content="stuzog/FAX-ng" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="FreeAPS-X-ng User Guide" />
   
-  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes clinic in Vancouver, BC Canada" />
+  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
   
 
 <meta name="author" content="By Stuart Hertzog with assistance from Marc Fornier" />
 
 
-<meta name="date" content="2022-07-01" />
+<meta name="date" content="2022-07-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,19 +32,27 @@
   
 
 <link rel="next" href="initial-settings.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
 
 
 
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -141,21 +148,21 @@
 <div id="header">
 <h1 class="title">FreeAPS-X-ng User Guide</h1>
 <p class="author"><em>By Stuart Hertzog with assistance from Marc Fornier</em></p>
-<p class="date"><em>2022-07-01</em></p>
+<p class="date"><em>2022-07-02</em></p>
 </div>
-<div id="how-to-use-this-guide" class="section level1">
-<h1><span class="header-section-number">1</span> How To Use This Guide</h1>
-<div id="the-sidebar" class="section level2">
-<h2><span class="header-section-number">1.1</span> The Sidebar</h2>
+<div id="how-to-use-this-guide" class="section level1 hasAnchor">
+<h1><span class="header-section-number">1</span> How To Use This Guide<a href="index.html#how-to-use-this-guide" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="the-sidebar" class="section level2 hasAnchor">
+<h2><span class="header-section-number">1.1</span> The Sidebar<a href="index.html#the-sidebar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="the-toolbar" class="section level2">
-<h2><span class="header-section-number">1.2</span> The Toolbar</h2>
-<div id="showhide" class="section level3">
-<h3><span class="header-section-number">1.2.1</span> Show/Hide</h3>
+<div id="the-toolbar" class="section level2 hasAnchor">
+<h2><span class="header-section-number">1.2</span> The Toolbar<a href="index.html#the-toolbar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="showhide" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.1</span> Show/Hide<a href="index.html#showhide" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>The first button on the toolbar</strong> can toggle the visibility of the sidebar. You can also hit the <code>S</code> key on your keyboard to do the same thing. If you close the sidebar, it will remain closed the next time you open the book.</p>
 </div>
-<div id="search" class="section level3">
-<h3><span class="header-section-number">1.2.2</span> Search</h3>
+<div id="search" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.2</span> Search<a href="index.html#search" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>The second button on the toolbar</strong> is the search button, keyboard shortcut <code>F</code> (Find).</p>
 <ul>
 <li>Click the button to see a <em>Search Box</em>. As you type in the box, you will see only sections that match the search keyword.</li>
@@ -163,15 +170,15 @@
 <li>Click the <code>Search Button</code> again (or hit F outside the <code>Search Box</code>). The search keyword will be emptied and the search box will be hidden.</li>
 </ul>
 </div>
-<div id="theme-settings" class="section level3">
-<h3><span class="header-section-number">1.2.3</span> Theme settings</h3>
+<div id="theme-settings" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.3</span> Theme settings<a href="index.html#theme-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>The third button on the toolbar</strong> is for Font/Theme settings. You can:</p>
 <ul>
 <li>Change the <code>font size</code> (bigger/smaller), the <code>font family</code> (serif/sans serif), and the <code>theme</code> (White, Sepia, or Night).</li>
 </ul>
 </div>
-<div id="downloads" class="section level3">
-<h3><span class="header-section-number">1.2.4</span> Downloads</h3>
+<div id="downloads" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.4</span> Downloads<a href="index.html#downloads" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>The icon for the <code>Download Button</code></strong> lets you download files.</p>
 <ul>
 <li>Downloadable file types (PDF, EBOOK) are displayed in a drop-down menu.
@@ -185,12 +192,12 @@
 </ul></li>
 </ul>
 </div>
-<div id="sharing" class="section level3">
-<h3><span class="header-section-number">1.2.5</span> Sharing</h3>
+<div id="sharing" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.5</span> Sharing<a href="index.html#sharing" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>On the right of the toolbar</strong> are buttons to share the link on social network websites such as Twitter, Facebook, and Linkedin.</p>
 </div>
-<div id="information" class="section level3">
-<h3><span class="header-section-number">1.2.6</span> Information</h3>
+<div id="information" class="section level3 hasAnchor">
+<h3><span class="header-section-number">1.2.6</span> Information<a href="index.html#information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>The Information Button (‘i’)</strong> lists keyboard shortcuts available to navigate the document.</p>
 
 </div>
@@ -206,12 +213,13 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -219,12 +227,12 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -232,14 +240,22 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/index.Rmd",
+"link": "https://github.com/stuzog/FAX-ng/edit/main/index.Rmd",
 "text": "Edit"
 },
 "history": {
 "link": null,
 "text": null
 },
-"download": ["_main.pdf", "_main.epub"],
+"view": {
+"link": "https://github.com/stuzog/FAX-ng/blob/master/index.Rmd",
+"text": null
+},
+"download": ["FAX-ng User Guide.pdf", "FAX-ng User Guide.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
