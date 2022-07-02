@@ -1,0 +1,9 @@
+book_filename: "FAX-ng User Guide"
+language:
+  ui:
+    chapter_name: ""
+delete_merged_file: true
+view: https://github.com/stuzog/FAX-ng/blob/master/%s
+edit: https://github.com/stuzog/FAX-ng/edit/master/%s
+output_dir: "book"
+clean: ["my-book.bbl", "R-packages.bib"]
