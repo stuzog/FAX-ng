@@ -33,7 +33,7 @@
   padding-left: 5em !important;
   }
 
-.section h1 {
+inner section.normal h1 {
   font-size: 1.5em;
   margin-top: 0.75em !important;
   margin-bottom: 0.125em !important;
@@ -42,7 +42,7 @@
   border-bottom: 2pt solid black !important;
   }
 
-.section h2 {
+inner section.normal h2 {
   font-size: 1.25em;
   margin-top: 0.75em !important;
   margin-bottom: 0.125em !important;
@@ -51,7 +51,7 @@
   border-bottom: 1pt dashed !important;
   }
 
-.section h3, .section h4  {
+inner section.normal h3, inner section.normal h4  {
   margin-top: 0.75em !important;
   margin-bottom: 0.125em !important;
   padding-top: 10px !important;
@@ -164,3 +164,9 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+/*page-inner section.normal ul {
+  padding-left: 4em;
+}*/
+
+

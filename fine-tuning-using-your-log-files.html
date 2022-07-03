@@ -23,7 +23,7 @@
 <meta name="author" content="By Stuart Hertzog with assistance from Marc Fornier" />
 
 
-<meta name="date" content="2022-07-02" />
+<meta name="date" content="2022-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -131,9 +131,10 @@
 <li class="chapter" data-level="6.1" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html#rule-of-thumb-meal-bolusing"><i class="fa fa-check"></i><b>6.1</b> Rule-of-Thumb Meal Bolusing</a></li>
 <li class="chapter" data-level="6.2" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html#let-fax-ng-do-its-work"><i class="fa fa-check"></i><b>6.2</b> Let FAX-ng Do Its Work</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>7</b> Appendix</a>
+<li class="chapter" data-level="7" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i><b>7</b> Appendices</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="appendix.html"><a href="appendix.html#acronyms"><i class="fa fa-check"></i><b>7.1</b> Acronyms</a></li>
+<li class="chapter" data-level="7.1" data-path="appendices.html"><a href="appendices.html#appendix-a-acronyms"><i class="fa fa-check"></i><b>7.1</b> Appendix A: Acronyms</a></li>
+<li class="chapter" data-level="7.2" data-path="appendices.html"><a href="appendices.html#appendix-b-settings"><i class="fa fa-check"></i><b>7.2</b> Appendix B: Settings</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -160,8 +161,14 @@
 <div id="copying-your-log-files-to-your-mac" class="section level2 hasAnchor" number="4.1">
 <h2><span class="header-section-number">4.1</span> Copying Your Log Files to Your Mac<a href="fine-tuning-using-your-log-files.html#copying-your-log-files-to-your-mac" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>You must first create and copy <em>‌FreeAPS-ng</em> log files from your iPhone to your Mac computer.</p>
-<p>Tap <em>Share logs</em> at the very bottom of <em>Settings</em> in FAX-ng. This will create two log files, <code>log.txt</code> and <code>log_prev.txt</code>, and open a screen allowing you to Share them by a variety of methods.</p>
-<p>Save these files on your Mac in a <em>Folder</em> of your choice. Leave the <em>Folder window</em> open on your <em>Desktop</em>.</p>
+<ul>
+<li>Tap <em>Share logs</em> at the bottom of <em>Settings</em> in FAX-ng</li>
+</ul>
+<p>This will create two log files, <code>log.txt</code> and <code>log_prev.txt</code>, and open a screen allowing you to transfer them by a variety of methods.</p>
+<ul>
+<li>Save these files on your Mac in a <em>Folder</em> of your choice</li>
+<li>Leave the <em>Folder window</em> open on your <em>Desktop</em></li>
+</ul>
 </div>
 <div id="setting-uamsmbsmb-limitations" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Setting UAMSMB/SMB Limitations<a href="fine-tuning-using-your-log-files.html#setting-uamsmbsmb-limitations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -172,15 +179,15 @@
 Max SMB Basal Minutes
 Autosens Max
 Autosens Min</code></pre>
-<p>They do they not affect the calculations except by putting up fences.</p>
-<p>The primary focus on a new setup is to have initial <em>Settings</em> so that the system is immediately able to function adequately using its default calculations.</p>
+<p><strong>They do they not affect calculations</strong> except by putting up fences.</p>
+<p><em><strong>The primary focus on a new setup</strong> is to have initial </em>Settings* so that the system is immediately able to function adequately using its default calculations.</p>
 <p>But if your <em>Basal Minutes</em> is set to <code>30</code> and your <em>Basal Rate</em> is <code>.1</code>, and the app wants to give you an SMB of <code>2U</code>, the <em>Basal Minutes</em> setting will limit it to <code>.5U</code> at a time, and your blood sugar will be high forever.</p>
 <p>So you will want to increase Basal Minutes to a value that allows the algorithm to do its job. The ideal is to create <em>Settings</em> that allow 95% of any <em>UAMSMB/SMB calculation</em> made by FAX-ng to influence insulin delivery. For this we need to ensure that:</p>
 <pre><code>SMB is not limited by maxUAMSMBBasalMinutes
 SMB is not limited by maxSMBBasalMinutes
 Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
 <p>To understand SMB and its limitations factors, you can read:<br />
-<a href="https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html#understanding-super-micro-bolus-smb">Understanding Super Micro Bolus (SMB)</a> in the <a href="https://openaps.readthedocs.io/en/latest/docs/README.html">OpenAPS documentation</a>.</p>
+<a href="https://openaps.readthedocs.io/en/latest/docs/Customize-Iterate/oref1.html#understanding-super-micro-bolus-smb">Understanding Super Micro Bolus (SMB)</a> in the OpenAPS documentation.</p>
 </div>
 <div id="open-terminal-on-your-mac" class="section level3 hasAnchor" number="4.2.2">
 <h3><span class="header-section-number">4.2.2</span> Open Terminal on Your Mac<a href="fine-tuning-using-your-log-files.html#open-terminal-on-your-mac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -189,43 +196,45 @@ Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
 <h4><span class="header-section-number">4.2.2.1</span> <strong>SHORTCUT to open Terminal</strong><a href="fine-tuning-using-your-log-files.html#shortcut-to-open-terminal" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>Click on the <em>Desktop</em> in <em>Finder</em></li>
-<li>Hold [SHIFT+OPTION+U] keys down together</li>
-<li>Press [RETURN] or [ENTER]</li>
-<li>Start typing <em>terminal</em> when the window opens</li>
-<li>Double-click the now-selected <em>Terminal</em> application to open it</li>
+<li>Hold the [COMMAND] key then tap the [SPACEBAR]</li>
+<li>Start typing <em>terminal</em> when the <em>Spotlight Search bar</em> opens</li>
+<li>Press [RETURN/ENTER] to open the <em>Terminal</em> application</li>
 </ul>
 </div>
-<div id="change-to-the-log-file-directory" class="section level4 hasAnchor" number="4.2.2.2">
-<h4><span class="header-section-number">4.2.2.2</span> Change to the Log File Directory<a href="fine-tuning-using-your-log-files.html#change-to-the-log-file-directory" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="change-focus-to-the-log-file-directory" class="section level4 hasAnchor" number="4.2.2.2">
+<h4><span class="header-section-number">4.2.2.2</span> Change focus to the Log File Directory<a href="fine-tuning-using-your-log-files.html#change-focus-to-the-log-file-directory" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>Type <code>cd [SPACE]</code> in Terminal</li>
 <li>Switch to <em>Finder</em></li>
-<li>Drag the small <em>Folder icon</em> where you saved the log files, into the <em>Terminal</em> window</li>
+<li>Drag the small <em>Folder icon</em> where you saved the log files, into the <em>Terminal</em> window
+<ul>
+<li><code>path/to/the/log/files/folder</code> will appear next to <code>cd</code></li>
+</ul></li>
 <li>Press [ENTER/RETURN]. This will change <em>Terminal</em> to the log file directory.</li>
 </ul>
-<p>You can type <code>ls</code> then <code>[RETURN]</code> or <code>[ENTER]</code> to list them.
-The commands given below will now work correctly.</p>
+<p>You can type <code>ls</code> then tap [RETURN/ENTER] to list the log files.<br />
+The following commands will now work correctly.</p>
 </div>
 </div>
 <div id="find-and-compare-the-ratio-of-smb-limited-lines" class="section level3 hasAnchor" number="4.2.3">
 <h3><span class="header-section-number">4.2.3</span> Find and Compare The Ratio of SMB-Limited Lines<a href="fine-tuning-using-your-log-files.html#find-and-compare-the-ratio-of-smb-limited-lines" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>First, find find the total number of lines from the log pertinent to each.</p>
+<p><strong>First, find find the total number of lines from the log pertinent to each.</strong></p>
 <p>Copy and paste the first line of each command (below), after the <code>$</code> prompt. The first line is the command, the second the returned result:</p>
 <pre><code>grep maxUAMSMBBasalMinutes log.txt | grep limited | wc -l
      114</code></pre>
-<p>Then find the number of lines that are SMB-limited:</p>
+<p><strong>Then find the number of lines that are SMB-limited:</strong></p>
 <pre><code>grep maxUAMSMBBasalMinutes log.txt | grep &quot;SMB limited&quot; | wc -l
       57</code></pre>
-<p>Compare the two results. If the number of limited lines is more than 5% (in the above examples it obviously is), you need to adjust <code>maxUAMSMBBasalMinutes</code>, guided by these log reports.</p>
-<p>Sort the result by calculated units (the last value on the line):</p>
+<p><strong>Compare the two results.</strong> If the number of limited lines is more than 5% (in the above examples it obviously is), you need to adjust <code>maxUAMSMBBasalMinutes</code>, guided by these log reports.</p>
+<p><strong>Sort the result by calculated units</strong> (the last value on the line):</p>
 <pre><code>grep maxUAMSMBBasalMinutes log.txt | grep &quot;SMB limited&quot;  | sort -n +20</code></pre>
-<p>Scroll through the search results to see how much the algorithm is limiting insulin delivery. The overall idea is to “ignore” the extreme SMBs. If the latter accounts for less than 5% of all lines, then don’t change your settings.</p>
+<p><strong>Scroll through the search results</strong> to see how much the algorithm is limiting insulin delivery. The overall idea is to “ignore” the extreme SMBs.</p>
 <p>In the log file, you will see lines similar to:</p>
 <pre><code>DEV: JavaScript log: SMB is not limited by MaxUAMSMBBasalMinutes. ( insulinReq: 0.53U )
 DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.28U )</code></pre>
 <p>There will be entries for both <em>maxUAMSMBBasalMinutes</em> and <em>maxSMBBasalMinutes</em></p>
-<p>Optimally, you want to have more “not limited” lines then limited, with limited being limited to less then 5% of all of the lines.</p>
-<p>If you need to adjust <em>maxUAMSMBBasalMinutes</em> to reduce the percentage of lines that are limited, look for the line that represents about the mid-way of limited values. For example, if you have something like:</p>
+<p>Optimally, you want to have more “not limited” lines then limited, with limited lines being less then 5% of all of the lines. If they are less than 5% of all lines, you don’t need to change your settings.</p>
+<p>To adjust <em>maxUAMSMBBasalMinutes</em> to reduce the percentage of lines that are limited, look for the line that represents about the mid-way of limited values. For example, if you have something like:</p>
 <pre><code>DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.28U )
 DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 5.72U )
 DEV: JavaScript log: SMB limited by maxUAMSMBBasalMinutes [ 60m ]: 1.5U ( 6.1U )</code></pre>

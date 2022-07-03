@@ -35,7 +35,7 @@ setting-uamsmbsmb-limitations
 safety-limiters
 open-terminal-on-your-mac
 shortcut-to-open-terminal
-change-to-the-log-file-directory
+change-focus-to-the-log-file-directory
 find-and-compare-the-ratio-of-smb-limited-lines
 an-easier-way-for-the-rest-of-us
 checking-the-results
@@ -44,5 +44,6 @@ ballpark-formula
 bolusing-for-meals
 rule-of-thumb-meal-bolusing
 let-fax-ng-do-its-work
-appendix
-acronyms
+appendices
+appendix-a-acronyms
+appendix-b-settings

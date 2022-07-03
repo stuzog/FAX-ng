@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3 Add Pump | FreeAPS-X-ng User Guide</title>
+  <title>7 Appendices | FreeAPS-X-ng User Guide</title>
   <meta name="description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3 Add Pump | FreeAPS-X-ng User Guide" />
+  <meta property="og:title" content="7 Appendices | FreeAPS-X-ng User Guide" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
   <meta name="github-repo" content="stuzog/FAX-ng" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3 Add Pump | FreeAPS-X-ng User Guide" />
+  <meta name="twitter:title" content="7 Appendices | FreeAPS-X-ng User Guide" />
   
   <meta name="twitter:description" content="Settings and Steps for installing, setting up, and running FAX-ng, based on FreeAPS X, being developed by BC Diabetes in Vancouver, BC Canada" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="initial-settings.html"/>
-<link rel="next" href="fine-tuning-using-your-log-files.html"/>
+<link rel="prev" href="bolusing-for-meals.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -156,50 +156,26 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="add-pump" class="section level1 hasAnchor" number="3">
-<h1><span class="header-section-number">3</span> Add Pump<a href="add-pump.html#add-pump" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="if-you-are-updgrading-from-freeaps-x" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> If You Are Updgrading From FreeAPS X<a href="add-pump.html#if-you-are-updgrading-from-freeaps-x" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Only one pump at a time</strong> can be controlled by <em>FreeAPS-X</em> or <em>FAX-ng</em>, so to add a pump to a new setup you must first <em>Disable OrangeLink/RileyLink</em> in the old pump setup.</p>
+<div id="appendices" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">7</span> Appendices<a href="appendices.html#appendices" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="appendix-a-acronyms" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Appendix A: Acronyms<a href="appendices.html#appendix-a-acronyms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>BG</strong> Blood Glucose<br />
+<strong>BGI</strong> Blood Glucose Impact<br />
+<strong>CI</strong> Carb Impact<br />
+<strong>COB</strong> Carbs On Board<br />
+<strong>CR</strong> Carb Ratio<br />
+<strong>ICR</strong> Insulin to Carb Ratio<br />
+<strong>IOB</strong> Insulin On Board<br />
+<strong>ISF</strong> Insulin Sensitivity Factor<br />
+<strong>ISR</strong> Insulin Sensitivity Ratio<br />
+<strong>SMB</strong> Super Micro Bolus<br />
+<strong>SR</strong> Sensitivity Ratio<br />
+<strong>UAM</strong> Unannounced Meals<br />
+<strong>ZT</strong> Zero-Temp</p>
 </div>
-<div id="if-you-are-upgrading-from-loop-to-fax-ng" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> If You Are Upgrading From Loop to FAX-ng<a href="add-pump.html#if-you-are-upgrading-from-loop-to-fax-ng" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>ATTENTION: You must FIRST disconnect RileyLink/OrangeLink/EmaLink from <em>Loop.app</em> BEFORE trying to connect a new Omnipod to <em>FAX-ng</em>.</strong></p>
-<p>At a scheduled or unscheduled Omnipod change:</p>
-<p><strong><em>While in Loop</em></strong></p>
-<ul>
-<li>Tap <em>Replace Pod</em> BEFORE disconnecting your RileyLink
-<ul>
-<li><em>Settings —&gt; OmniPod</em> screen</li>
-<li>(Also available from <em>Pump/Pod icon</em> in Loop top Header)</li>
-</ul></li>
-<li>Turn RileyLink switch OFF
-<ul>
-<li>RileyLink <em>Green LED</em> will turn off</li>
-</ul></li>
-<li>Close the Loop App
-<ul>
-<li><em>Swipe Up</em> Loop icon on <em>Home Screen</em></li>
-</ul></li>
-</ul>
-<p><strong><em>Back in FAX-ng</em></strong></p>
-<ul>
-<li>Select <em>Omnipod</em> in <em>Settings —&gt; Pump</em>
-<ul>
-<li>RileyLink should be recognised immediately</li>
-<li><em>Turn RileyLink ON</em></li>
-</ul></li>
-<li>Fill a new pump or OmniPod, attach to body
-<ul>
-<li><em>Start New Pod</em></li>
-</ul></li>
-</ul>
-</div>
-<div id="close-loop" class="section level2 hasAnchor" number="3.3">
-<h2><span class="header-section-number">3.3</span> Close Loop<a href="add-pump.html#close-loop" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<ul>
-<li><strong>Enable</strong></li>
-</ul>
+<div id="appendix-b-settings" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Appendix B: Settings<a href="appendices.html#appendix-b-settings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
 </div>
@@ -208,8 +184,8 @@
           </div>
         </div>
       </div>
-<a href="initial-settings.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fine-tuning-using-your-log-files.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="bolusing-for-meals.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -240,7 +216,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/stuzog/FAX-ng/edit/main/02_Add_Pump.Rmd",
+"link": "https://github.com/stuzog/FAX-ng/edit/main/appendices.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -248,7 +224,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/stuzog/FAX-ng/blob/master/02_Add_Pump.Rmd",
+"link": "https://github.com/stuzog/FAX-ng/blob/master/appendices.Rmd",
 "text": null
 },
 "download": ["FAX-ng User Guide.pdf", "FAX-ng User Guide.epub"],

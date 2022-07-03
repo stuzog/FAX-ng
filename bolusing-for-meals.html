@@ -23,7 +23,7 @@
 <meta name="author" content="By Stuart Hertzog with assistance from Marc Fornier" />
 
 
-<meta name="date" content="2022-07-02" />
+<meta name="date" content="2022-07-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="adjustmentfactor-autosens.html"/>
-<link rel="next" href="appendix.html"/>
+<link rel="next" href="appendices.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -131,9 +131,10 @@
 <li class="chapter" data-level="6.1" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html#rule-of-thumb-meal-bolusing"><i class="fa fa-check"></i><b>6.1</b> Rule-of-Thumb Meal Bolusing</a></li>
 <li class="chapter" data-level="6.2" data-path="bolusing-for-meals.html"><a href="bolusing-for-meals.html#let-fax-ng-do-its-work"><i class="fa fa-check"></i><b>6.2</b> Let FAX-ng Do Its Work</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>7</b> Appendix</a>
+<li class="chapter" data-level="7" data-path="appendices.html"><a href="appendices.html"><i class="fa fa-check"></i><b>7</b> Appendices</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="appendix.html"><a href="appendix.html#acronyms"><i class="fa fa-check"></i><b>7.1</b> Acronyms</a></li>
+<li class="chapter" data-level="7.1" data-path="appendices.html"><a href="appendices.html#appendix-a-acronyms"><i class="fa fa-check"></i><b>7.1</b> Appendix A: Acronyms</a></li>
+<li class="chapter" data-level="7.2" data-path="appendices.html"><a href="appendices.html#appendix-b-settings"><i class="fa fa-check"></i><b>7.2</b> Appendix B: Settings</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -157,28 +158,28 @@
             <section class="normal" id="section-">
 <div id="bolusing-for-meals" class="section level1 hasAnchor" number="6">
 <h1><span class="header-section-number">6</span> Bolusing for Meals<a href="bolusing-for-meals.html#bolusing-for-meals" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p><em>FreeAPS (FAX)</em> doesn’t actually give meal bolus recommendations as does <em>Loop</em>. Here’s what the Meals section of <a href="https://www.loopandlearn.org/freeaps-x/">LoopAndLearn FreeAPS docs</a> recommends:</p>
-<p>The function Ivan has built to give a bolus is not a bolus calculator in the same way as <em>Loop</em> has one, so don’t expect it to give you enough insulin.</p>
-<p>What Ivan has done is to take the <strong><em>insulinReq</em></strong> calculation and use it to provide a bolus estimate. The <strong><em>insulinReq</em></strong> value is calculated based on a number of prediction curves, and when carbs are added, it mediates the effect of carbs with the other curves.</p>
-<p>So the <strong><em>insulinReq</em></strong> value is not necessarily as much insulin as the normal meal bolus would be (it’s conservative for safety reasons). <strong><em>It’s not a bolus calculator.</em></strong></p>
-<p>The recommendation with <em>oref1</em> (and the way most people use it) is to bolus 60%-75% of required meal bolus and leave the algorithm to deal with variation in absorption.</p>
+<p><strong><em>FreeAPS (FAX)</em> doesn’t actually give meal bolus recommendations as does <em>Loop</em></strong>. Here’s what the Meals section of <a href="https://www.loopandlearn.org/freeaps-x/">LoopAndLearn FreeAPS docs</a> recommends:</p>
+<p><strong>The built-in function to give a bolus is not a bolus calculator</strong> in the same way as <em>Loop</em> has one, so don’t expect it to give you enough insulin.</p>
+<p><strong>It takes the <em>insulinReq</em> calculation and uses it to provide a bolus estimate</strong>. The <em>insulinReq</em> value is calculated based on a number of prediction curves, and when carbs are added, it mediates the effect of carbs with the other curves.</p>
+<p><strong><em>It’s not a bolus calculator</em></strong>. The <strong><em>insulinReq</em></strong> value is not necessarily as much insulin as the normal meal bolus would be (it’s conservative for safety reasons).</p>
+<p><strong>The recommendation with <em>oref1</em> is to bolus 60%-75% of required meal bolus</strong> and leave the algorithm to deal with variation in absorption. This is the way most people use it.</p>
 <div id="rule-of-thumb-meal-bolusing" class="section level2 hasAnchor" number="6.1">
 <h2><span class="header-section-number">6.1</span> Rule-of-Thumb Meal Bolusing<a href="bolusing-for-meals.html#rule-of-thumb-meal-bolusing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Rather than pull out a calculator, one pre-bolus strategy might be to form a little scale for yourself like the following. You should form your own based on your needs and <strong><em>Carb Ratio (CR)</em></strong>:</p>
+<p><strong>Rather than pull out a calculator</strong>, one pre-bolus strategy might be to form a rule-of-thumb scale for yourself like the following. You should make your own based on your needs and <strong><em>Carb Ratio (CR)</em></strong>:</p>
 <ul>
-<li>Small meal, 20g or less = 2U</li>
-<li>Med meal, 20g – 40g = 3U</li>
-<li>Large meal, 40g or more = 4U</li>
+<li><strong>Small meal</strong> 20g or less –&gt; <strong>2U</strong></li>
+<li><strong>Medium-size meal</strong> 20g-40g –&gt; <strong>3U</strong></li>
+<li><strong>Big meal</strong> 40g or more –&gt; <strong>4U</strong></li>
 </ul>
-<p>Your scale should be based upon your carb ratio and the % of upfront bolus that you prefer. For example, with a Carb Ratio of 10, the above meal boluses would provide a:
+<p><strong>Your scale should be based upon your carb ratio and the % of upfront bolus that you prefer</strong>. For example, with a Carb Ratio of 10, the above meal boluses would provide a:
 * 100% upfront bolus for 20g
 * 75% upfront bolus for 40g, and
 * 67% upfront bolus for 60g</p>
 </div>
 <div id="let-fax-ng-do-its-work" class="section level2 hasAnchor" number="6.2">
 <h2><span class="header-section-number">6.2</span> Let FAX-ng Do Its Work<a href="bolusing-for-meals.html#let-fax-ng-do-its-work" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>With an appropriate pre-bolus and Settings, you should NOT need to issue manual boluses after your meal. This may be a difficult task coming from Loop!</p>
-<p>If you used automatic bolus with <em>Loop</em> or the <em>FreeAPS</em> fork, you’ll find Temp Basal a little slower than you are used to, but it’s worth taking the time to test and adjust your settings before you turn on <strong><em>SMB/UAM</em></strong>.</p>
+<p>With an appropriate pre-bolus and Settings, <strong>you should NOT need to issue manual boluses after your meal</strong>. This may be a difficult task coming from Loop!</p>
+<p>If you used automatic bolus with <em>Loop</em> or the <em>FreeAPS</em> fork, you’ll find Temp Basal a little slower than you are used to, but it’s worth taking the time to test and adjust your settings before you turn on <em>SMB/UAM</em>.</p>
 <p>Observe for a few days and make adjustments as needed so that you won’t have to issue correction meal boluses.</p>
 <p>(Thanks to <a href="https://www.loopandlearn.org">LoopAndLearn</a> for this.)</p>
 
@@ -190,7 +191,7 @@
         </div>
       </div>
 <a href="adjustmentfactor-autosens.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="appendix.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="appendices.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
