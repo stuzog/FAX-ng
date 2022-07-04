@@ -44,6 +44,7 @@ ballpark-formula
 bolusing-for-meals
 rule-of-thumb-meal-bolusing
 let-fax-ng-do-its-work
+appendices
 appendix-a-acronyms
 appendix-b-settings
 freeaps-x-vversion

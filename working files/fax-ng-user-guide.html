@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>B FAX-ng User Guide | FreeAPS-X-ng User Guide</title>
+  <meta name="description" content="Settings and Steps for installing, setting up, and running FreeAPS X, in order of listing in the app. If not mentioned, leave existing Default Settings" />
+  <meta name="generator" content="bookdown 0.13 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="B FAX-ng User Guide | FreeAPS-X-ng User Guide" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Settings and Steps for installing, setting up, and running FreeAPS X, in order of listing in the app. If not mentioned, leave existing Default Settings" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="B FAX-ng User Guide | FreeAPS-X-ng User Guide" />
+  
+  <meta name="twitter:description" content="Settings and Steps for installing, setting up, and running FreeAPS X, in order of listing in the app. If not mentioned, leave existing Default Settings" />
+  
+
+<meta name="author" content="Compiled by Stuart Hertzog" />
+
+
+<meta name="date" content="2022-06-26" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="appendix.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">FreeAPS-X-ng User Guide</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> </a></li>
+<li class="part"><span><b>I Part 1</b></span></li>
+<li class="chapter" data-level="2" data-path="initial-settings.html"><a href="initial-settings.html"><i class="fa fa-check"></i><b>2</b> Initial Settings</a><ul>
+<li class="chapter" data-level="2.1" data-path="initial-settings.html"><a href="initial-settings.html#services"><i class="fa fa-check"></i><b>2.1</b> SERVICES</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="initial-settings.html"><a href="initial-settings.html#nightscout"><i class="fa fa-check"></i><b>2.1.1</b> Nightscout</a></li>
+<li class="chapter" data-level="2.1.2" data-path="initial-settings.html"><a href="initial-settings.html#cgm"><i class="fa fa-check"></i><b>2.1.2</b> CGM</a></li>
+<li class="chapter" data-level="2.1.3" data-path="initial-settings.html"><a href="initial-settings.html#notifications"><i class="fa fa-check"></i><b>2.1.3</b> Notifications</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="initial-settings.html"><a href="initial-settings.html#configuration"><i class="fa fa-check"></i><b>2.2</b> CONFIGURATION</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="initial-settings.html"><a href="initial-settings.html#preferences"><i class="fa fa-check"></i><b>2.2.1</b> Preferences</a></li>
+<li class="chapter" data-level="2.2.2" data-path="initial-settings.html"><a href="initial-settings.html#basal-profile"><i class="fa fa-check"></i><b>2.2.2</b> Basal Profile</a></li>
+<li class="chapter" data-level="2.2.3" data-path="initial-settings.html"><a href="initial-settings.html#insulin-sensitivities"><i class="fa fa-check"></i><b>2.2.3</b> Insulin Sensitivities</a></li>
+<li class="chapter" data-level="2.2.4" data-path="initial-settings.html"><a href="initial-settings.html#carb-ratios"><i class="fa fa-check"></i><b>2.2.4</b> Carb Ratios</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="initial-settings.html"><a href="initial-settings.html#target-ranges"><i class="fa fa-check"></i><b>2.3</b> Target Ranges</a></li>
+<li class="chapter" data-level="2.4" data-path="initial-settings.html"><a href="initial-settings.html#autotune"><i class="fa fa-check"></i><b>2.4</b> Autotune</a></li>
+<li class="chapter" data-level="2.5" data-path="initial-settings.html"><a href="initial-settings.html#connect-to-apple-health"><i class="fa fa-check"></i><b>2.5</b> Connect To Apple Health</a></li>
+</ul></li>
+<li class="part"><span><b>II Part 2</b></span></li>
+<li class="chapter" data-level="3" data-path="add-pump.html"><a href="add-pump.html"><i class="fa fa-check"></i><b>3</b> Add Pump</a><ul>
+<li class="chapter" data-level="3.1" data-path="add-pump.html"><a href="add-pump.html#if-you-are-updgrading-from-freeaps-x"><i class="fa fa-check"></i><b>3.1</b> If You Are Updgrading From FreeAPS X</a></li>
+<li class="chapter" data-level="3.2" data-path="add-pump.html"><a href="add-pump.html#if-you-are-upgrading-from-loop-to-fax-ng"><i class="fa fa-check"></i><b>3.2</b> If You Are Upgrading From Loop to FAX-ng</a></li>
+<li class="chapter" data-level="3.3" data-path="add-pump.html"><a href="add-pump.html#closed-loop"><i class="fa fa-check"></i><b>3.3</b> Closed Loop</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html"><i class="fa fa-check"></i><b>4</b> Fine-Tuning Using Your Log Files</a><ul>
+<li class="chapter" data-level="4.1" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#copying-your-log-files-to-your-mac"><i class="fa fa-check"></i><b>4.1</b> Copying Your Log Files to Your Mac</a></li>
+<li class="chapter" data-level="4.2" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#setting-uamsmbsmb-limitations"><i class="fa fa-check"></i><b>4.2</b> Setting UAMSMB/SMB Limitations</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#using-terminal-on-your-mac"><i class="fa fa-check"></i><b>4.2.1</b> Using Terminal on Your Mac</a></li>
+<li class="chapter" data-level="4.2.2" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#an-easier-way-for-the-rest-of-us"><i class="fa fa-check"></i><b>4.2.2</b> An Easier Way for the Rest of Us</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="fine-tuning-using-your-log-files.html"><a href="fine-tuning-using-your-log-files.html#checking-the-results"><i class="fa fa-check"></i><b>4.3</b> Checking The Results</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="adjustmentfactor.html"><a href="adjustmentfactor.html"><i class="fa fa-check"></i><b>5</b> AdjustmentFactor</a><ul>
+<li class="chapter" data-level="5.1" data-path="adjustmentfactor.html"><a href="adjustmentfactor.html#ballpark-formula"><i class="fa fa-check"></i><b>5.1</b> Ballpark Formula</a></li>
+</ul></li>
+<li class="part"><span><b>III Part 4</b></span><ul>
+<li class="chapter" data-level="5.2" data-path="FAX-ng_User_Guide.html"><a href="#bolusing-for-meals"><i class="fa fa-check"></i><b>5.2</b> Bolusing for Meals</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="adjustmentfactor.html"><a href="adjustmentfactor.html#rule-of-thumb-meal-bolusing"><i class="fa fa-check"></i><b>5.2.1</b> Rule-of-Thumb Meal Bolusing</a></li>
+<li class="chapter" data-level="5.2.2" data-path="adjustmentfactor.html"><a href="adjustmentfactor.html#try-to-let-fax-ng-do-its-job"><i class="fa fa-check"></i><b>5.2.2</b> Try to Let FAX-ng Do Its Job</a></li>
+</ul></li>
+</ul></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="appendix.html"><a href="appendix.html"><i class="fa fa-check"></i><b>A</b> Appendix</a><ul>
+<li class="chapter" data-level="A.1" data-path="appendix.html"><a href="appendix.html#acronyms"><i class="fa fa-check"></i><b>A.1</b> Acronyms</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html"><i class="fa fa-check"></i><b>B</b> FAX-ng User Guide</a><ul>
+<li class="chapter" data-level="B.1" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#initial-settings-1"><i class="fa fa-check"></i><b>B.1</b> Initial Settings</a><ul>
+<li class="chapter" data-level="B.1.1" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#services-1"><i class="fa fa-check"></i><b>B.1.1</b> SERVICES</a></li>
+<li class="chapter" data-level="B.1.2" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#configuration-1"><i class="fa fa-check"></i><b>B.1.2</b> CONFIGURATION</a></li>
+<li class="chapter" data-level="B.1.3" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#basal-profile-1"><i class="fa fa-check"></i><b>B.1.3</b> Basal Profile</a></li>
+<li class="chapter" data-level="B.1.4" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#insulin-sensitivities-1"><i class="fa fa-check"></i><b>B.1.4</b> Insulin Sensitivities</a></li>
+<li class="chapter" data-level="B.1.5" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#carb-ratios-1"><i class="fa fa-check"></i><b>B.1.5</b> Carb Ratios</a></li>
+<li class="chapter" data-level="B.1.6" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#target-ranges-1"><i class="fa fa-check"></i><b>B.1.6</b> Target Ranges</a></li>
+<li class="chapter" data-level="B.1.7" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#autotune-1"><i class="fa fa-check"></i><b>B.1.7</b> Autotune</a></li>
+</ul></li>
+<li class="chapter" data-level="B.2" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#connect-to-apple-health-1"><i class="fa fa-check"></i><b>B.2</b> Connect To Apple Health</a></li>
+<li class="chapter" data-level="B.3" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#add-pump-1"><i class="fa fa-check"></i><b>B.3</b> Add Pump</a><ul>
+<li class="chapter" data-level="B.3.1" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#if-you-are-updgrading-from-freeaps-x-1"><i class="fa fa-check"></i><b>B.3.1</b> If You Are Updgrading From FreeAPS X</a></li>
+<li class="chapter" data-level="B.3.2" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#if-you-are-upgrading-from-loop-to-fax-ng-1"><i class="fa fa-check"></i><b>B.3.2</b> If You Are Upgrading From Loop to FAX-ng</a></li>
+</ul></li>
+<li class="chapter" data-level="B.4" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#closed-loop-1"><i class="fa fa-check"></i><b>B.4</b> Closed Loop</a></li>
+<li class="chapter" data-level="B.5" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#fine-tuning-using-your-log-files-1"><i class="fa fa-check"></i><b>B.5</b> Fine-Tuning Using Your Log Files</a><ul>
+<li class="chapter" data-level="B.5.1" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#copying-your-log-files-to-your-mac-1"><i class="fa fa-check"></i><b>B.5.1</b> Copying Your Log Files to Your Mac</a></li>
+<li class="chapter" data-level="B.5.2" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#setting-uamsmbsmb-limitations-1"><i class="fa fa-check"></i><b>B.5.2</b> Setting UAMSMB/SMB Limitations</a></li>
+<li class="chapter" data-level="B.5.3" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#checking-the-results-1"><i class="fa fa-check"></i><b>B.5.3</b> Checking The Results</a></li>
+</ul></li>
+<li class="chapter" data-level="B.6" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#adjustmentfactor-1"><i class="fa fa-check"></i><b>B.6</b> AdjustmentFactor</a><ul>
+<li class="chapter" data-level="B.6.1" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#ballpark-formula-1"><i class="fa fa-check"></i><b>B.6.1</b> Ballpark Formula</a></li>
+</ul></li>
+<li class="chapter" data-level="B.7" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#bolusing-for-meals-1"><i class="fa fa-check"></i><b>B.7</b> Bolusing for Meals</a><ul>
+<li class="chapter" data-level="B.7.1" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#rule-of-thumb-meal-bolusing-1"><i class="fa fa-check"></i><b>B.7.1</b> Rule-of-Thumb Meal Bolusing</a></li>
+<li class="chapter" data-level="B.7.2" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#try-to-let-fax-ng-do-its-job-1"><i class="fa fa-check"></i><b>B.7.2</b> Try to Let FAX-ng Do Its Job</a></li>
+</ul></li>
+<li class="chapter" data-level="B.8" data-path="fax-ng-user-guide.html"><a href="fax-ng-user-guide.html#fax-ng-acronyms"><i class="fa fa-check"></i><b>B.8</b> FAX-ng Acronyms</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FreeAPS-X-ng User Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="fax-ng-user-guide" class="section level1">
+<h1><span class="header-section-number">B</span> FAX-ng User Guide</h1>
+<p><em>220622 Contains all current FAX-ng Guides</em></p>
+<p>{{TOC}}</p>
+<p>+++</p>
+<div id="initial-settings-1" class="section level2">
+<h2><span class="header-section-number">B.1</span> Initial Settings</h2>
+<p>The following <em>Settings</em> are listed in order of appearance in the <em>FAX-ng</em> app.<br />
+If not mentioned, leave the existing <em>Default Settings</em></p>
+<p><strong>Click</strong> <em>Cog Wheel</em> (bottom right)</p>
+<div id="services-1" class="section level3">
+<h3><span class="header-section-number">B.1.1</span> SERVICES</h3>
+<div id="nightscout-1" class="section level4">
+<h4><span class="header-section-number">B.1.1.1</span> Nightscout</h4>
+<ul>
+<li><em>URL</em> - <strong>Your Nightscout URL</strong> ( NO / at the end)</li>
+<li><em>Password</em> - <strong>Your API Secret</strong> as the <em>password</em></li>
+<li><strong>Connect</strong> - Tap —&gt; <em>Connected!</em></li>
+<li><em>Allow Uploads</em> - <strong>Enable</strong></li>
+</ul>
+</div>
+<div id="cgm-1" class="section level4">
+<h4><span class="header-section-number">B.1.1.2</span> CGM</h4>
+<ul>
+<li><em>Type</em> - <strong>Dexcom G6</strong></li>
+<li><em>Transmitter ID</em> - <strong>Enter current</strong></li>
+</ul>
+</div>
+<div id="notifications-1" class="section level4">
+<h4><span class="header-section-number">B.1.1.3</span> Notifications</h4>
+<ul>
+<li>Your choice, e.g. All turned <strong>Off</strong> set <strong>High —&gt; 10</strong></li>
+</ul>
+<p>+++</p>
+</div>
+</div>
+<div id="configuration-1" class="section level3">
+<h3><span class="header-section-number">B.1.2</span> CONFIGURATION</h3>
+<div id="preferences-1" class="section level4">
+<h4><span class="header-section-number">B.1.2.1</span> Preferences</h4>
+<div id="freeaps-x-1" class="section level5">
+<h5><span class="header-section-number">B.1.2.1.1</span> FREEAPS X</h5>
+<ul>
+<li><em>Recommended Insulin Fraction</em> <strong>—&gt; 2</strong></li>
+</ul>
+</div>
+<div id="openaps-main-settings-1" class="section level5">
+<h5><span class="header-section-number">B.1.2.1.2</span> OPENAPS MAIN Settings</h5>
+<ul>
+<li><em>Insulin Curve</em> - Set to the <strong>type of insulin</strong> you are using</li>
+<li><em>Max IOB</em> - <strong>raise to 10</strong></li>
+</ul>
+</div>
+<div id="dynamic-settings-1" class="section level5">
+<h5><span class="header-section-number">B.1.2.1.3</span> DYNAMIC SETTINGS</h5>
+<ul>
+<li><em>Dynamic CR</em> - <strong>Enable</strong></li>
+<li><em>Adjust Basal</em> - <strong>Enable</strong></li>
+</ul>
+</div>
+<div id="openaps-smb-settings-1" class="section level5">
+<h5><span class="header-section-number">B.1.2.1.4</span> OPENAPS SMB SETTINGS</h5>
+<ul>
+<li><em>Enable SMB …</em> options - <strong>Enable All</strong></li>
+<li><em>Enable UAM</em> - <strong>Enable</strong></li>
+<li><em>Max Delta-BG Threshold SMB</em> <strong>—&gt; 0.3</strong></li>
+<li><em>SMB Interval</em> <strong>—&gt; 1</strong></li>
+<li><em>Bolus Increment</em> <strong>—&gt; 0.05 <em>ONLY if using Omnipod</em></strong></li>
+</ul>
+</div>
+<div id="openaps-targets-settings-1" class="section level5">
+<h5><span class="header-section-number">B.1.2.1.5</span> OPENAPS TARGETS SETTINGS</h5>
+<ul>
+<li><em>High TempTarget Raises Sensitivity</em> - <strong>Enable</strong></li>
+<li><em>Low TempTarget Raises Sensitivity</em> - <strong>Enable</strong></li>
+<li><em>Sensitivity Raises Target</em> - <strong>Enable</strong></li>
+<li><em>Resistance Lowers Target</em> - <strong>Enable</strong></li>
+</ul>
+<p>+++</p>
+</div>
+</div>
+</div>
+<div id="basal-profile-1" class="section level3">
+<h3><span class="header-section-number">B.1.3</span> Basal Profile</h3>
+<ul>
+<li><strong>Copy from old Loop/FAX</strong></li>
+</ul>
+</div>
+<div id="insulin-sensitivities-1" class="section level3">
+<h3><span class="header-section-number">B.1.4</span> Insulin Sensitivities</h3>
+<ul>
+<li><strong>Use <em>Autotune</em> value</strong></li>
+</ul>
+</div>
+<div id="carb-ratios-1" class="section level3">
+<h3><span class="header-section-number">B.1.5</span> Carb Ratios</h3>
+<ul>
+<li><strong>Use <em>Autotune calculated value</em></strong></li>
+</ul>
+</div>
+<div id="target-ranges-1" class="section level3">
+<h3><span class="header-section-number">B.1.6</span> Target Ranges</h3>
+<ul>
+<li><strong>Set to whatever range with which you are comfortable</strong><br />
+<strong>Lower range</strong> is the one that matters e.g. 5.5 - 5.5, 24/7</li>
+</ul>
+</div>
+<div id="autotune-1" class="section level3">
+<h3><span class="header-section-number">B.1.7</span> Autotune</h3>
+<ul>
+<li><strong>Enable</strong></li>
+</ul>
+</div>
+</div>
+<div id="connect-to-apple-health-1" class="section level2">
+<h2><span class="header-section-number">B.2</span> Connect To Apple Health</h2>
+<ul>
+<li><strong>Enable Read</strong> and <strong>Write</strong> in iPhone <em>Settings —&gt; Apple Health</em></li>
+</ul>
+<p>+++</p>
+</div>
+<div id="add-pump-1" class="section level2">
+<h2><span class="header-section-number">B.3</span> Add Pump</h2>
+<div id="if-you-are-updgrading-from-freeaps-x-1" class="section level3">
+<h3><span class="header-section-number">B.3.1</span> If You Are Updgrading From FreeAPS X</h3>
+<p>Only one pump at a time can be controlled by <em>FreeAPS-X</em> or <em>FAX-ng</em>, so to add a pump to a new setup you must first <em>Disable OrangeLink/RileyLink</em> in the old pump setup.</p>
+</div>
+<div id="if-you-are-upgrading-from-loop-to-fax-ng-1" class="section level3">
+<h3><span class="header-section-number">B.3.2</span> If You Are Upgrading From Loop to FAX-ng</h3>
+<p><strong>ATTENTION:</strong> You must FIRST disconnect RileyLink/OrangeLink/EmaLink from <em>Loop.app</em> BEFORE trying to connect a new OmniPod to <em>FAX-ng</em>. You must do this at a scheduled or other Pod change. To do this:</p>
+<p>Tap <em>Replace Pod</em> BEFORE disconnecting your RileyLink
+- <em>Settings —&gt; OmniPod</em> screen
+- (Also available from <em>Pump/Pod icon</em> in Loop top Header)</p>
+<p>Turn RileyLink switch OFF
+- RileyLink <em>Green LED</em> will turn off</p>
+<p>Close the Loop App
+- <em>Swipe Up</em> Loop icon on <em>Home Screen</em></p>
+<p>Back in FAX-ng, select <em>Omnipod</em> in <em>Settings —&gt; Pump</em>
+- RileyLink should be recognised immediately
+- <em>Turn RileyLink ON</em></p>
+<p>Fill new OmniPod, attach to body
+- <em>Start New Pod</em></p>
+</div>
+</div>
+<div id="closed-loop-1" class="section level2">
+<h2><span class="header-section-number">B.4</span> Closed Loop</h2>
+<ul>
+<li><strong>Enable</strong></li>
+</ul>
+<p>+++</p>
+</div>
+<div id="fine-tuning-using-your-log-files-1" class="section level2">
+<h2><span class="header-section-number">B.5</span> Fine-Tuning Using Your Log Files</h2>
+<div id="copying-your-log-files-to-your-mac-1" class="section level3">
+<h3><span class="header-section-number">B.5.1</span> Copying Your Log Files to Your Mac</h3>
+<p>You must first create and copy <em>‌FreeAPS-ng</em> log files from your iPhone to your Mac computer.</p>
+<p>Tap <em>Share logs</em> at the very bottom of <em>Settings</em> in FAX-ng. This will create two log files, <code>log.txt</code> and <code>log_prev.txt</code>, and open a screen allowing you to Share them by a variety of methods.</p>
+<p>Save these files on your Mac in a <em>Folder</em> of your choice. Leave the <em>Folder window</em> open on your <em>Desktop</em>.</p>
+</div>
+<div id="setting-uamsmbsmb-limitations-1" class="section level3">
+<h3><span class="header-section-number">B.5.2</span> Setting UAMSMB/SMB Limitations</h3>
+<p>The following <em>Settings</em> act as “safety limiters”:</p>
+<pre><code>Max UAMSMB Basal Minutes
+Max SMB Basal Minutes
+Autosens Max
+Autosens Min</code></pre>
+<p>They do they not affect the calculations except by putting up fences.</p>
+<p>The primary focus on a new setup is to have initial <em>Settings</em> so that the system is immediately able to function adequately using its default calculations.</p>
+<p>But if your <em>Basal Minutes</em> is set to <code>30</code> and your <em>Basal Rate</em> is <code>.1</code>, and the app wants to give you an SMB of <code>2U</code>, the <em>Basal Minutes</em> setting will limit it to <code>.5U</code> at a time, and your blood sugar will be high forever.</p>
+<p>So you will want to increase Basal Minutes to a value that allows the algorithm to do its job. The ideal is to create <em>Settings</em> that allow 95% of any <em>UAMSMB/SMB calculation</em> made by FAX-ng to influence insulin delivery. For this we need to ensure that:</p>
+<pre><code>SMB is not limited by maxUAMSMBBasalMinutes
+SMB is not limited by maxSMBBasalMinutes
+Dynamic ISF limited by autosens_max setting: 1.3 (1.3)</code></pre>
+<div id="using-terminal-on-your-mac-1" class="section level4">
+<h4><span class="header-section-number">B.5.2.1</span> Using Terminal on Your Mac</h4>
+<p>The <em>Terminal</em> application is in <em>Applications —&gt; Utilities —&gt; Terminal</em></p>
+<p><strong>SHORTCUT:</strong> Click on the <em>Desktop</em> in <em>Finder</em> then hold [SHIFT+OPTION+U] keys down together, press [RETURN] or [ENTER], then start typing <em>terminal</em> when the window opens. Double-click the now-selected <em>Terminal</em> application to open it.</p>
+<p>Type <code>cd [SPACE]</code> in Terminal, then switch to <em>Finder</em> and drag the small <em>Folder icon</em> where you saved the log files, into the <em>Terminal</em> window.</p>
+<p>Press [ENTER] or [RETURN]. This will change <em>Terminal</em> to the log file directory. You can type <code>ls</code> then <code>[RETURN]</code> or <code>[ENTER]</code> to list them.</p>
+<p>The commands given below will now work correctly.</p>
+<p>First, find find the total number of lines from the log pertinent to each.</p>
+<p>Copy and paste the first line of each command (below), after the <code>$</code> prompt. The first line is the command, the second the returned result:</p>
+<pre><code>grep maxUAMSMBBasalMinutes log.txt | grep limited | wc -l
+     114</code></pre>
+<p>Then find the number of lines that are SMB-limited:</p>
+<pre><code>grep maxUAMSMBBasalMinutes log.txt | grep &quot;SMB limited&quot; | wc -l
+      57</code></pre>
+<p>Compare the two results. If the number of limited lines is more than 5% (in the above examples it obviously is), you need to adjust <code>maxUAMSMBBasalMinutes</code>, guided by these log reports.</p>
+<p>Sort the result by calculated units (the last value on the line):</p>
+<pre><code>grep maxUAMSMBBasalMinutes log.txt | grep &quot;SMB limited&quot;  | sort -n +20</code></pre>
+<p>For example, if the highest value is 2.26U and your <code>maxUAMSMBBasalMinutes</code> right now is .2U, and there are many lines with values more than 1U, you would need to raise SMBMax to 1U and ignore the ones &gt;1U.</p>
+<p>Changing this is your <em>Settings</em> will clear off most of the list.</p>
+</div>
+<div id="an-easier-way-for-the-rest-of-us-1" class="section level4">
+<h4><span class="header-section-number">B.5.2.2</span> An Easier Way for the Rest of Us</h4>
+<p>Here’s a much easier way for non-technical people:
+* Email log files to yourself
+* Open <code>log_prev.txt</code>
+* Press <code>[CONTROL/COMMAND] + F</code> to perform a search
+* Enter e.g. <em>SMB is limited by maxUAMSMBBasalMinutes</em> into the <em>Search field</em>.
+* Press [RETURN/ENTER]</p>
+<p>Scroll through the search results to see how much the algorithm is limiting insulin delivery. Do the maths and up your UAMSMB basal minutes by that amount. For example: the algorithm bolused 1U insulin when it says it really wanted to bolus 3U, so increase <strong>UAMBasalMinutes</strong> by 3x in <em>Settings</em>.</p>
+</div>
+</div>
+<div id="checking-the-results-1" class="section level3">
+<h3><span class="header-section-number">B.5.3</span> Checking The Results</h3>
+<p>To check this (except the first day or so), run the above commands on the <code>log_prev.txt</code> file, which reports the previous 24h period. Leave it run for a full day before rechecking.</p>
+<p>If everything else is set up correctly for you, these SMB maximums won’t be needed in the future. But now you can know for sure that they are based on the results returned in your log files.</p>
+<p>+++</p>
+</div>
+</div>
+<div id="adjustmentfactor-1" class="section level2">
+<h2><span class="header-section-number">B.6</span> AdjustmentFactor</h2>
+<p><em>AdjustmentFactor</em> is a multiplier that impacts insulin delivery. It determines the aggressiveness of the <em>DynamicISF</em> algorithm, and it tends to be person-specific.</p>
+<p>The <em>default</em> is set at <code>1</code>, which means that there is no change from those <em>Settings</em> values that affect insulin delivery.</p>
+<div id="ballpark-formula-1" class="section level3">
+<h3><span class="header-section-number">B.6.1</span> Ballpark Formula</h3>
+<p>There is a formula for deriving a ball park number to start off with:</p>
+<pre><code>adjustmentFactor = 277700/TDD * BG_target * (18 * 18) * StaticISF</code></pre>
+<p>In <em>Settings -&gt; Debug Options -&gt; TDD Averages</em> there are numbers for:
+* <em>Weighted Average</em> (e.g. 78.75)
+* BG_Target: your choice (e.g. 5.5)</p>
+<p>In <em>Settings -&gt; Insulin Sensitivities</em>:
+* StaticISF: Use the <strong><em>Autotune value</em></strong> (e.g. 2.31)</p>
+<p>Using these example numbers, the <em>AdjustmentFactor</em> will be:</p>
+<pre><code>277700 / ( 2.31 * 78.75 * 5.5 * ( 18 * 18 ) * 2.31) = 0.856</code></pre>
+<p>It isn’t 100%, but it gets you into the ballpark range, and you can tweak up or down from there.</p>
+<p>+++</p>
+</div>
+</div>
+<div id="bolusing-for-meals-1" class="section level2">
+<h2><span class="header-section-number">B.7</span> Bolusing for Meals</h2>
+<p><em>FreeAPS (FAX)</em> doesn’t actually give meal bolus recommendations as does <em>Loop</em>. Here’s what the Meals section of <a href="https://www.loopandlearn.org/freeaps-x/">LoopAndLearn FreeAPS docs</a> recommends:</p>
+<p>The function Ivan has built to give a bolus is not a bolus calculator in the same way as <em>Loop</em> has one, so don’t expect it to give you enough insulin.</p>
+<p>What Ivan has done is to take the <strong><em>insulinReq</em></strong> calculation and use it to provide a bolus estimate. The <strong><em>insulinReq</em></strong> value is calculated based on a number of prediction curves, and when carbs are added, it mediates the effect of carbs with the other curves.</p>
+<p>So the <strong><em>insulinReq</em></strong> value is not necessarily as much insulin as the normal meal bolus would be (it’s conservative for safety reasons). <strong><em>It’s not a bolus calculator.</em></strong></p>
+<p>The recommendation with <em>oref1</em> (and the way most people use it) is to bolus 60%-75% of required meal bolus and leave the algorithm to deal with variation in absorption.</p>
+<div id="rule-of-thumb-meal-bolusing-1" class="section level3">
+<h3><span class="header-section-number">B.7.1</span> Rule-of-Thumb Meal Bolusing</h3>
+<p>Rather than pull out a calculator, one pre-bolus strategy might be to form a little scale for yourself like the following. You should form your own based on your needs and <strong><em>Carb Ratio (CR)</em></strong>:</p>
+<ul>
+<li>Small meal, 20g or less = 2U</li>
+<li>Med meal, 20g – 40g = 3U</li>
+<li>Large meal, 40g or more = 4U</li>
+</ul>
+<p>Your scale should be based upon your carb ratio and the % of upfront bolus that you prefer. For example, with a Carb Ratio of 10, the above meal boluses would provide a:
+* 100% upfront bolus for 20g
+* 75% upfront bolus for 40g, and
+* 67% upfront bolus for 60g</p>
+</div>
+<div id="try-to-let-fax-ng-do-its-job-1" class="section level3">
+<h3><span class="header-section-number">B.7.2</span> Try to Let FAX-ng Do Its Job</h3>
+<p>With an appropriate pre-bolus and Settings, you should NOT need to issue manual boluses after your meal. This may be a difficult task coming from Loop!</p>
+<p>If you used automatic bolus with <em>Loop</em> or the <em>FreeAPS</em> fork, you’ll find Temp Basal a little slower than you are used to, but it’s worth taking the time to test and adjust your settings before you turn on <strong><em>SMB/UAM</em></strong>.</p>
+<p>Observe for a few days and make adjustments as needed so that you won’t have to issue correction meal boluses.</p>
+<p>(Thanks to <a href="https://www.loopandlearn.org">LoopAndLearn</a> for this.)</p>
+<p>+++</p>
+</div>
+</div>
+<div id="fax-ng-acronyms" class="section level2">
+<h2><span class="header-section-number">B.8</span> FAX-ng Acronyms</h2>
+<dl>
+<dt>
+BG
+</dt>
+<dd>
+Blood Glucose
+<dt>
+BGI
+</dt>
+<dd>
+Blood Glucose Impact
+<dt>
+CI
+</dt>
+<dd>
+Carb Impact
+<dt>
+COB
+</dt>
+<dd>
+Carbs On Board
+<dt>
+CR
+</dt>
+<dd>
+Carb Ratio
+<dt>
+ICR
+</dt>
+<dd>
+Insulin to Carb Ratio
+<dt>
+IOB
+</dt>
+<dd>
+Insulin On Board
+<dt>
+ISF
+</dt>
+<dd>
+Insulin Sensitivity Factor
+<dt>
+ISR
+</dt>
+<dd>
+Insulin Sensitivity Ratio
+<dt>
+SMB
+</dt>
+<dd>
+Super Micro Bolus
+<dt>
+SR
+</dt>
+<dd>
+Sensitivity Ratio
+<dt>
+UAM
+</dt>
+<dd>
+Unannounced Meals
+<dt>
+ZT
+</dt>
+<dd>
+Zero-Temp
+</dl>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="appendix.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/FAX-ng_User_Guide.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

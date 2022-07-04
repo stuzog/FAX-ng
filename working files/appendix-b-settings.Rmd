@@ -1,0 +1,127 @@
+## Appendix B: Settings
+
+### FREEAPS X V(version)
+* Closed Loop
+
+### DEVICES
+* Pump
+	* Omnipod
+		* Pod Settings
+			* Expires
+			* Pod Active Clock
+			* Bolus Delivery
+			* Basal Delivery
+			* Alarms
+			* Reservoir
+			* Insulin Delivered
+			* CONFIGURATION
+				* Suspend Delivery
+				* Disable Confirmation Beeps
+				* Disable Automatic Bolus
+				* Expiration Reminder
+				* Change Time Zone
+				* Insulin Type
+				* Replace Pod
+			* DEVICES
+				* RileyLink/OrangeLink/EmaLink
+			* DIAGNOSTICS
+				* Read Pod Status
+				* Play Test Beeps
+				* Read Pulse Log
+				* Test Command
+			* POD DETAILS
+				* Assigned Addresses
+				* Lot
+				* PI Version
+				* PM Version
+
+### SERVICES
+* Nightscout
+	* Nightscout Config
+		* Nightscout URL
+		* Nightscout Secret Key
+		* Connect
+		* Delete
+		* Allow uploads
+		* LOCAL GLUCOSE SOURCE
+			* Use local glucose server
+			* Port
+			* Backfill glucose
+* CGM
+	* Type
+	* TRANSMITTER ID
+	* CALENDAR
+		* Create events in calendar
+* OTHER
+	* Upload glucose to Nightscout
+
+### Apple Health
+* Connect to Apple Health
+
+### Notifications
+* GLUCOSE
+	* Show glucose on the app badge
+	* Always Notify Glucose
+	* Also play alert sound
+	* Also add source info
+	* Low
+	* High
+* OTHER
+	* Carbs Required Threshold
+
+### CONFIGURATION
+Preferences are in ***Appendix C: Preferences***
+
+### Pump Settings
+* DELIVERY LIMITS
+	* Max Basal
+	* Max Bolus
+* DURATION OF INSULIN ACTION
+	* DIA
+	* Save on Pump
+### Basal Profile
+* SCHEDULE
+	* Rate(s)
+	* Add
+* Save on Pump
+
+### Insulin Sensitivities
+* AUTOTUNE
+	* Calculated Sensitivity
+* AUTOSENS
+	* Sensitivity Ratio
+	* Calculated Sensitivity
+* SCHEDULE
+	* Rate(s)
+	* Add
+* Save
+
+### Carb Ratios
+* AUTOTUNE
+	* Calculated Ratio
+* SCHEDULE
+	* Ratio(s)
+	* Add
+* Save
+
+### Target Ranges
+* SCHEDULE
+	* Range(s)
+	* Add
+* Save
+
+### Autotune
+* Use Autotune
+* Last Run
+* Run now
+* Carb Ratio
+* Sensitivity
+* BASAL PROFILE
+	* Rate(s)
+* Delete Autotune data
+
+### DEVELOPER
+* Debug options
+
+### Animated Background
+### Share logs
