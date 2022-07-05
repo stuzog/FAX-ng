@@ -1,10 +1,11 @@
 book_filename: "FAX-ng User Guide"
+rmd_files:
+  html: ["index.Rmd", "Initial_Settings.Rmd", "Add_Pump.Rmd", "Fine-Tuning_Using_Your_Log_Files.Rmd", "Adjustment_Factor.Rmd", "Bolusing_For_Meals.Rmd", "Appendix.Rmd"]
 language:
   ui:
     chapter_name: ""
 delete_merged_file: true
 view: https://github.com/stuzog/FAX-ng/blob/master/%s
 edit: https://github.com/stuzog/FAX-ng/edit/master/%s
-output_dir: "_book"
+output_dir: "docs"
 clean: ["my-book.bbl", "R-packages.bib"]
-
