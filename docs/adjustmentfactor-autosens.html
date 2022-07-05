@@ -23,7 +23,6 @@
 <meta name="author" content="By Stuart Hertzog with assistance from Marc Fornier" />
 
 
-<meta name="date" content="2022-07-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -143,13 +142,14 @@
 <li class="chapter" data-level="7.2.5" data-path="appendices.html"><a href="appendices.html#notifications-1"><i class="fa fa-check"></i><b>7.2.5</b> Notifications</a></li>
 <li class="chapter" data-level="7.2.6" data-path="appendices.html"><a href="appendices.html#configuration-1"><i class="fa fa-check"></i><b>7.2.6</b> CONFIGURATION</a></li>
 <li class="chapter" data-level="7.2.7" data-path="appendices.html"><a href="appendices.html#pump-settings"><i class="fa fa-check"></i><b>7.2.7</b> Pump Settings</a></li>
-<li class="chapter" data-level="7.2.8" data-path="appendices.html"><a href="appendices.html#insulin-sensitivities-1"><i class="fa fa-check"></i><b>7.2.8</b> Insulin Sensitivities</a></li>
-<li class="chapter" data-level="7.2.9" data-path="appendices.html"><a href="appendices.html#carb-ratios-1"><i class="fa fa-check"></i><b>7.2.9</b> Carb Ratios</a></li>
-<li class="chapter" data-level="7.2.10" data-path="appendices.html"><a href="appendices.html#target-ranges-1"><i class="fa fa-check"></i><b>7.2.10</b> Target Ranges</a></li>
-<li class="chapter" data-level="7.2.11" data-path="appendices.html"><a href="appendices.html#autotune-1"><i class="fa fa-check"></i><b>7.2.11</b> Autotune</a></li>
-<li class="chapter" data-level="7.2.12" data-path="appendices.html"><a href="appendices.html#developer"><i class="fa fa-check"></i><b>7.2.12</b> DEVELOPER</a></li>
-<li class="chapter" data-level="7.2.13" data-path="appendices.html"><a href="appendices.html#animated-background"><i class="fa fa-check"></i><b>7.2.13</b> Animated Background</a></li>
-<li class="chapter" data-level="7.2.14" data-path="appendices.html"><a href="appendices.html#share-logs"><i class="fa fa-check"></i><b>7.2.14</b> Share logs</a></li>
+<li class="chapter" data-level="7.2.8" data-path="appendices.html"><a href="appendices.html#basal-profile-1"><i class="fa fa-check"></i><b>7.2.8</b> Basal Profile</a></li>
+<li class="chapter" data-level="7.2.9" data-path="appendices.html"><a href="appendices.html#insulin-sensitivities-1"><i class="fa fa-check"></i><b>7.2.9</b> Insulin Sensitivities</a></li>
+<li class="chapter" data-level="7.2.10" data-path="appendices.html"><a href="appendices.html#carb-ratios-1"><i class="fa fa-check"></i><b>7.2.10</b> Carb Ratios</a></li>
+<li class="chapter" data-level="7.2.11" data-path="appendices.html"><a href="appendices.html#target-ranges-1"><i class="fa fa-check"></i><b>7.2.11</b> Target Ranges</a></li>
+<li class="chapter" data-level="7.2.12" data-path="appendices.html"><a href="appendices.html#autotune-1"><i class="fa fa-check"></i><b>7.2.12</b> Autotune</a></li>
+<li class="chapter" data-level="7.2.13" data-path="appendices.html"><a href="appendices.html#developer"><i class="fa fa-check"></i><b>7.2.13</b> DEVELOPER</a></li>
+<li class="chapter" data-level="7.2.14" data-path="appendices.html"><a href="appendices.html#animated-background"><i class="fa fa-check"></i><b>7.2.14</b> Animated Background</a></li>
+<li class="chapter" data-level="7.2.15" data-path="appendices.html"><a href="appendices.html#share-logs"><i class="fa fa-check"></i><b>7.2.15</b> Share logs</a></li>
 </ul></li>
 <li class="chapter" data-level="7.3" data-path="appendices.html"><a href="appendices.html#appendix-c-preferences"><i class="fa fa-check"></i><b>7.3</b> Appendix C: Preferences</a>
 <ul>
@@ -185,6 +185,7 @@
             <section class="normal" id="section-">
 <div id="adjustmentfactor-autosens" class="section level1 hasAnchor" number="5">
 <h1><span class="header-section-number">5</span> AdjustmentFactor (AutoSens)<a href="adjustmentfactor-autosens.html#adjustmentfactor-autosens" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>Settings –&gt; Preferences –&gt; Dynamic Settings –&gt; Adjustment Factor</em></p>
 <p><strong><em>AdjustmentFactor</em> is a multiplier that impacts insulin delivery</strong>. It determines the aggressiveness of the <em>DynamicISF</em> algorithm, and it tends to be person-specific.</p>
 <p><strong>Basically, it’s determining how sensitive/resistant you are compared to your baseline</strong>. An <code>AutoSens</code> value of <code>1</code> means that your sensitivity is what the system expects. More than <code>1</code> means that you’re needing more insulin than your baseline; less than <code>1</code> means you are currently more sensitive and need less insulin</p>
 <p><strong>The <em>default</em> is set at <code>1</code></strong>, which means that there is no change from those <em>Settings</em> values that affect insulin delivery.</p>

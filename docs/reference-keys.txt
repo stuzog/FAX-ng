@@ -39,7 +39,7 @@ change-focus-to-the-log-file-directory
 find-and-compare-the-ratio-of-smb-limited-lines
 an-easier-way-for-the-rest-of-us
 checking-the-results
-adjustmentfactor-autosens
+adjustment-factor-autosens
 ballpark-formula
 bolusing-for-meals
 rule-of-thumb-meal-bolusing
