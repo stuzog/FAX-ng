@@ -30,14 +30,14 @@ adjustmentFactor = 277700/TDD * BG_target * (18 * 18) * StaticISF
 
 Autotune runs automatically every day, but you may want to run it now if it hasn't run for a while.
 
-* Th Autotune value also can be found in 
-  * *Settings -> Configuration --> Insulin Sensitivities --> Autotunee --> Calculated Sensitivity*
+* The Autotune value also can be found in 
+  * *Settings -> Configuration --> Insulin Sensitivities --> Autotune --> Calculated Sensitivity*
 
-Using these example numbers, the *AdjustmentFactor* will be:
+Using some example numbers, the *AdjustmentFactor* will be:
 
 ```
 277700 / ( 2.31 * 78.75 * 5.5 * ( 18 * 18 ) * 2.31) = 0.856
 ```
 
-It isn't 100%, but it gets you into the ballpark range, and you can tweak up or down from there.
+It isn't 100% accurate, but it gets you into the ballpark range, and you can tweak up or down from there.
 
