@@ -11,6 +11,7 @@
 **IOB**	Insulin On Board  
 **ISF**	Insulin Sensitivity Factor  
 **ISR**	Insulin Sensitivity Ratio  
+**RIF** Recommended Insulin Fraction  
 **SMB**	Super Micro Bolus  
 **SR**	Sensitivity Ratio  
 **UAM**	Unannounced Meals  
