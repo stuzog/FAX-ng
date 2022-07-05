@@ -67,8 +67,9 @@ inner section.normal h3, inner section.normal h4  {
 
 .date {
   margin-bottom: 1em;
-  font-size: small;
-  font-style: normal;
+  padding: 5px;
+  font-size: inherit;
+  font-style: italic;
   }
 
 .figure {

@@ -1,7 +1,7 @@
 --- 
 title: "FreeAPS-X-ng User Guide"
-author: "By Stuart Hertzog with assistance from Marc Fornier"
-date: "This version published `r Sys.Date()`"
+author: "By Stuart Hertzog and Marc Fornier"
+date: "Version `r Sys.Date()`"
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook: default
