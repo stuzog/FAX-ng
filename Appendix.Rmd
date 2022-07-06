@@ -20,7 +20,7 @@
 
 ## Appendix B: Settings
 
-### FREEAPS X V(version)
+### FREEAPS X (version)
 * Closed Loop
 
 ### DEVICES
