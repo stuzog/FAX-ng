@@ -1,6 +1,6 @@
 # Add Pump
 
-## If You Are Updgrading From FreeAPS X
+## If You Are Upgrading From FreeAPS X
 **Only one pump at a time** can be controlled by *FreeAPS-X* or *FAX-ng*, so to add a pump to a new setup you must first *Disable OrangeLink/RileyLink* in the old pump setup.
  
 ## If You Are Upgrading From Loop to FAX-ng
