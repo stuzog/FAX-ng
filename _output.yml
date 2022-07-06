@@ -1,14 +1,13 @@
 bookdown::gitbook:
-  css: style.css
-  highlight: tango
   config:
     toc:
       before: |
         <li><a href="./">FreeAPS-X-ng User Guide</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/stuzog/FAX-ng/edit/main/%s
-    download: ["pdf", "epub"]
+  css: style.css
+  edit: https://github.com/stuzog/FAX-ng/edit/main/%s
+  download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
