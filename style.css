@@ -33,25 +33,27 @@
   padding-left: 5em !important;
   }
 
-inner section.normal h1 {
+.page-inner section.normal h1 {
   font-size: 1.5em;
-  margin-top: 0.75em !important;
-  margin-bottom: 0.125em !important;
+  margin-top: 0.25em !important;
+  margin-bottom: 0.25em !important;
   padding-top: 10px !important;
   padding-bottom: 2px !important;
-  border-bottom: 2pt solid black !important;
-  }
+  border-bottom: 12pt solid gray !important;
+  border-bottom-width: 60% !important;
+}
 
-inner section.normal h2 {
+.page-inner section.normal h2 {
   font-size: 1.25em;
-  margin-top: 0.75em !important;
-  margin-bottom: 0.125em !important;
+  margin-top: 1em !important;
+  margin-bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 2px !important;
-  border-bottom: 1pt dashed !important;
+  border-bottom: 5pt dashed gray !important;
+  border-bottom-width: 60% !important;
   }
 
-inner section.normal h3, inner section.normal h4  {
+.page-inner section.normal h3, .page-inner section.normal h4  {
   margin-top: 0.75em !important;
   margin-bottom: 0.125em !important;
   padding-top: 10px !important;
