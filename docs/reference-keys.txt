@@ -26,7 +26,7 @@ target-ranges
 autotune
 connect-to-apple-health
 add-pump
-if-you-are-updgrading-from-freeaps-x
+if-you-are-upgrading-from-freeaps-x
 if-you-are-upgrading-from-loop-to-fax-ng
 close-loop
 fine-tuning-using-your-log-files
