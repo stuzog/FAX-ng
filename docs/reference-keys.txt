@@ -70,3 +70,15 @@ openaps-targets-settings-1
 openaps-other-settings
 use-auto-isf
 autoisf-settings
+bc-diabetes-looping-agreement
+background
+what-we-believe
+approved-ap-systems
+this-consent-and-waiver
+hardware-components
+possible-risks
+agreement
+individual-patient-data-ipd-sharing-statement
+governing-law
+jurisdiction
+consent
