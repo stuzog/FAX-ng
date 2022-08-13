@@ -1,6 +1,6 @@
 book_filename: "FAX-ng User Guide"
 rmd_files:
-  html: ["index.Rmd", "Initial_Settings.Rmd", "Add_Pump.Rmd", "Fine_Tuning_Using_Your_Log_Files.Rmd", "Adjustment_Factor.Rmd", "Bolusing_For_Meals.Rmd", "Appendix.Rmd", "BCD_Agreement.Rmd"]
+  html: ["index.Rmd", "Initial_Settings.Rmd", "Add_Pump.Rmd", "Fine_Tuning_Using_Your_Log_Files.Rmd", "Adjustment_Factor.Rmd", "Bolusing_For_Meals.Rmd", "Appendix.Rmd", "BC_Diabetes_Looping_Agreement.Rmd"]
 language:
   ui:
     chapter_name: ""
