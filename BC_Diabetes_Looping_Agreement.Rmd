@@ -1,5 +1,5 @@
 ---
-title: "BCD Agreement"
+title: "BC Diabetes Looping Agreement"
 author: "BC Diabetes"
 date: "2022-08-07"
 output: html_document
