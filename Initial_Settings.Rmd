@@ -10,7 +10,7 @@ If not mentioned, leave the existing _Default Settings_.
 ### Nightscout
 - *URL* - **Your Nightscout URL** ( NO / at the end)
 - *Password* -  **Your API Secret** as the *password*
-- **Connect** - Tap --—> *Connected!*
+- **Connect** - Tap --> *Connected!*
 - *Allow Uploads* - **Enable**
 
 ### CGM
@@ -25,7 +25,7 @@ If not mentioned, leave the existing _Default Settings_.
 ### Preferences
 
 #### FREEAPS X
-- *Recommended Insulin Fraction* **—> 2**
+- *Recommended Insulin Fraction* **> 2**
 
 #### OPENAPS MAIN Settings
 - *Insulin Curve* - Set to the **type of insulin** you are using
@@ -38,9 +38,9 @@ If not mentioned, leave the existing _Default Settings_.
 #### OPENAPS SMB SETTINGS
 - *Enable SMB ...* options - **Enable All**
 - *Enable UAM* - **Enable**
-- *Max Delta-BG Threshold SMB* **—> 0.3**
-- *SMB Interval* **—> 1**
-- *Bolus Increment* **—> 0.05 *ONLY if using Omnipod***
+- *Max Delta-BG Threshold SMB* **> 0.3**
+- *SMB Interval* **> 1**
+- *Bolus Increment* **> 0.05 *ONLY if using Omnipod***
 
 #### OPENAPS TARGETS SETTINGS
 - *High TempTarget Raises Sensitivity* - **Enable**
