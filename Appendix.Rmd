@@ -20,7 +20,7 @@
 
 ## Appendix B: Settings
 
-### FREEAPS X (version)
+### FREEAPS X V(version)
 * Closed Loop
 
 ### DEVICES
@@ -212,7 +212,8 @@ Preferences are in ***Appendix C: Preferences***
 * Enable AutoISF
 
 ### AUTOISF SETTINGS
-FORGET ABOUT THESE IF AUTO ISF ISS TOGGLED OFF
+FORGET ABOUT THESE IF AUTO ISF IS TOGGLED OFF
+
 * Enable Floating Carbs
 * Enable AutoISF with COB
 * Enable BG acceleration in AutoISF 2.2
