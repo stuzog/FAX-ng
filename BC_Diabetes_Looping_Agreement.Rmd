@@ -1,10 +1,3 @@
----
-title: "BC Diabetes Looping Agreement"
-author: "BC Diabetes"
-date: "2022-08-07"
-output: html_document
----
-
 # BC Diabetes Looping Agreement
 Informed Consent and Waiver for Adults (18 years and older)  
 Dr. Tom Elliott, Medical Director of Dr. T.G. Elliott Inc. (**BCDiabetes**)  
