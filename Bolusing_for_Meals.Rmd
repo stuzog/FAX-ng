@@ -1,6 +1,6 @@
 # Bolusing for Meals
 
-***FreeAPS (FAX)* doesn’t actually give meal bolus recommendations as does *Loop***. Here’s what the Meals section of [LoopAndLearn FreeAPS docs](https://www.loopandlearn.org/freeaps-x/) recommends:
+***FreeAPS (FAX)* does not actually give meal bolus recommendations as does *Loop***. Here's what the Meals section of [LoopAndLearn FreeAPS docs](https://www.loopandlearn.org/freeaps-x/) recommends:
 
 **The built-in function to give a bolus is not a bolus calculator** in the same way as *Loop* has one, so don't expect it to give you enough insulin.
 
@@ -27,9 +27,9 @@
 
 With an appropriate pre-bolus and Settings, **you should NOT need to issue manual boluses after your meal**. This may be a difficult task coming from Loop!
 
-If you used automatic bolus with *Loop* or the *FreeAPS* fork, you’ll find Temp Basal a little slower than you are used to, but it’s worth taking the time to test and adjust your settings before you turn on *SMB/UAM*.
+If you used automatic bolus with *Loop* or the *FreeAPS* fork, youll find Temp Basal a little slower than you are used to, but its worth taking the time to test and adjust your settings before you turn on *SMB/UAM*.
 
-Observe for a few days and make adjustments as needed so that you won’t have to issue correction meal boluses.
+Observe for a few days and make adjustments as needed so that you wont have to issue correction meal boluses.
 
 (Thanks to [LoopAndLearn](https://www.loopandlearn.org) for this.)
 
