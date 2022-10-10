@@ -11,21 +11,49 @@ At a scheduled or unscheduled Omnipod change:
 ***While in Loop***
 
 * Tap *Replace Pod* BEFORE disconnecting your RileyLink
-	- *Settings —> OmniPod* screen
-	- (Also available from *Pump/Pod icon* in Loop top Header)
+	- *Settings > OmniPod* screen
+	  - (Also available from *Pump/Pod icon* in top Header in both Loop and FAX-ng)
 * Turn RileyLink switch OFF
 	- RileyLink *Green LED* will turn off
-* Close the Loop App
-	- *Swipe Up* Loop icon on *Home Screen* 
+* Close the Loop/FAX-ng App
+	- *Swipe Up* Loop/FAX-ng icon on *Home Screen* 
 
 ***Back in FAX-ng***
 
-* Select *Omnipod* in *Settings —> Pump*
+* Select *Omnipod* in *Settings > Pump*
 	- RileyLink should be recognised immediately
 	- *Turn RileyLink ON*
 * Fill a new pump or OmniPod, attach to body
 	- *Start New Pod*
 
+## To Change From Eros To Dash Pods
+
+Insulet currently offers has two types of Omnipods.  
+Both work with FAX-ng:
+
+* Omnipod Eros (needs RileyLink)
+* Omnipod Dash (Direct to iPhone vie Bluetooth)
+
+BC Diabetes is currently transitioning patients from Eros to Dash. 
+
+You must make this transition when you initiate a Pod change:
+
+* After you disconnect the old Pod, go into *Settings -> Pump -> Omnipod*
+* At the very bottom there a *Switch Pump System* link
+  * This will disable future use of Eros Pods
+* In *Settings -> Pump* there will be a new option for *Omnipod Dash*
+  * (As well as just Omnipod)
+* Choose Dash and it will ask you two questions:
+  * Warning time before expiration 
+  * Warning when Units fall below
+
+Answer these aand then you are confirmed. The rest is as before:
+
+* Fill the Pod
+* Click to pair Pod
+* Click to insert Cannula
+
 ## Close Loop
 * **Enable**
+
 

@@ -1,0 +1,32 @@
+# Dynamic ISF
+
+The idea behind *dynISF* is that ISF isn't a fixed number but changes as BG changes, e.g. if your BG climbs higher, your **Insulin Sensitivity** drops and you need more insulin.
+
+FAX-ng is using this, but unfortunately, there are two different versions of *dynISF*: the one FAX-ng using now, and a newer one that is going to be the new default.
+
+AAPS (Android's version of FAX) has apparently already replaced the original with the new; while FAX is debating getting rid of the original, or leaving both in with a switch between the two. 
+
+## To switch to the new *dynISF*
+
+Switching to the new formula is simple:
+
+*Settings -> Preferences -> Use Logarithmic Formula* **Enable**
+
+You will need to tweak your *AdjustmentFactor*, as the curve changes with the new formula, so the Adjustment Factor does change as well.
+
+To get to a ballpark AF with Log enabled, just divide by 1.666 what you have now and plug that in. 
+
+**NOTE: This is only your new starting point. You will need to make further adjustments to suit your condition.**
+
+The actual formula is:
+
+```
+F = 1800 / profile.sens * tdd_averages.average_7days * LN( profile.min_bg / ( 120 - pumpprofile.insulinPeakTime + 1 )
+```
+
+Each of the above variables points to the Debug Options screen + variable within it that you would need to use, but again, this will get you only to ballpark: you will want to monitor and tweak AF accordingly. 
+
+If you find it's not aggressive enough, increase AF, if it's too aggressive, decrease AF.
+
+NOTE: You can use a different value for *tdd_averages.average_7days* if you want. This smooths out the good and bad days that we all have. The new code actually adds a 14-day value.
+
